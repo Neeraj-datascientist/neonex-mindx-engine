@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeoNex Mindx</title>
+  <link rel="icon" type="image/png" href="1.png" />
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800">
+
+<!-- ================= HEADER ================= -->
+<header class="w-full bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+    <!-- Logo -->
+    <div class="flex items-center">
+      <img src="3.png" alt="NeoNex Logo" class="h-12 w-auto object-contain" />
+    </div>
+
+    <!-- Navigation -->
+    <nav class="hidden md:flex gap-6 text-sm font-medium">
+      <button onclick="showPage('home')" class="text-blue-600">Home</button>
+      <button onclick="showPage('courses')">Courses</button>
+      <button onclick="showPage('pricing')">Fees & Offers</button>
+      <button onclick="showPage('success')">Success Stories</button>
+    </nav>
+
+    <!-- CTA -->
+    <div class="flex gap-3 items-center">
+      <a href="tel:8088104708" class="text-sm font-medium">
+        📞 8088104708
+      </a>
+      <a href="mailto:neonexminds701@gmail.com"
+         class="px-4 py-2 bg-blue-600 text-white rounded text-sm">
+        Enquire Now
+      </a>
+    </div>
+
+  </div>
+</header>
+
+<!-- ================= PAGE : HOME ================= -->
+<div id="page-home">
+
+<!-- ================= HERO ================= -->
+<section class="bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800 text-white relative overflow-hidden">
+  <!-- Subtle Branded Background -->
+  <div class="absolute right-0 top-0 w-1/3 h-full opacity-10 pointer-events-none transform translate-x-1/4 translate-y-1/4">
+    <img src="1.png" alt="" class="w-full h-full object-contain" />
+  </div>
+
+  <div class="max-w-7xl mx-auto px-6 py-24 text-center relative z-10">
+
+    <span class="inline-block mb-4 px-4 py-1 text-xs bg-blue-700 rounded-full">
+      Transform Your Career in Data & AI
+    </span>
+
+    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+      Be Part of a <br />
+      <span class="text-blue-400">Better Future</span>
+    </h1>
+
+    <p class="max-w-3xl mx-auto text-lg text-blue-100 mb-8">
+      Master Data Science, AI/ML & Analytics with hands-on training,
+      real-world projects, and dedicated placement support.
+      <br />
+      Start from basics – non-tech friendly.
+    </p>
+
+    <div class="flex justify-center gap-4">
+      <button class="px-6 py-3 bg-blue-600 rounded-lg font-medium">
+        Explore Courses
+      </button>
+      <button class="px-6 py-3 bg-white text-blue-700 rounded-lg font-medium">
+        Free Career Guidance
+      </button>
+    </div>
+
+  </div>
+</section>
+<!-- ================= P1,1 ================= -->
+ <!-- ================= HOME : STATS ================= -->
+<section class="bg-white">
+  <div class="max-w-6xl mx-auto px-6 py-16">
+
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-10 text-center">
+
+      <div>
+        <div class="text-2xl font-bold text-blue-700">5000+</div>
+        <p class="text-sm text-gray-500 mt-1">Students Trained</p>
+      </div>
+
+      <div>
+        <div class="text-2xl font-bold text-blue-700">4.8 / 5</div>
+        <p class="text-sm text-gray-500 mt-1">Instructor Rating</p>
+      </div>
+
+      <div>
+        <div class="text-2xl font-bold text-blue-700">4.9 / 5</div>
+        <p class="text-sm text-gray-500 mt-1">Placement Support</p>
+      </div>
+
+      <div>
+        <div class="text-2xl font-bold text-blue-700">92%</div>
+        <p class="text-sm text-gray-500 mt-1">Placement Success</p>
+      </div>
+
+      <div>
+        <div class="text-2xl font-bold text-blue-700">65%</div>
+        <p class="text-sm text-gray-500 mt-1">Avg Salary Hike</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= HOME : JOB MARKET ================= -->
+<section class="bg-gradient-to-br from-red-950 via-red-900 to-red-800 text-white">
+  <div class="max-w-7xl mx-auto px-6 py-24 text-center">
+
+    <span class="inline-block mb-4 px-4 py-1 text-xs bg-red-700 rounded-full">
+      AI & Data Revolution
+    </span>
+
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">
+      The Job Market is Shifting Fast
+    </h2>
+
+    <p class="max-w-3xl mx-auto text-red-100 text-base md:text-lg mb-12">
+      Traditional roles are disappearing. AI & Data skills are no longer optional —
+      they are essential for survival and growth in the modern workforce.
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+
+      <div class="bg-red-800/80 p-8 rounded-xl">
+        <div class="text-4xl font-bold mb-2">85%</div>
+        <p class="text-sm text-red-100">
+          Jobs will require AI & Data skills
+        </p>
+      </div>
+
+      <div class="bg-red-800/80 p-8 rounded-xl">
+        <div class="text-4xl font-bold mb-2">2.7M</div>
+        <p class="text-sm text-red-100">
+          New AI & Data jobs every year
+        </p>
+      </div>
+
+      <div class="bg-red-800/80 p-8 rounded-xl">
+        <div class="text-4xl font-bold mb-2">42%</div>
+        <p class="text-sm text-red-100">
+          Salary premium for AI-skilled roles
+        </p>
+      </div>
+
+    </div>
+
+    <div class="mt-14">
+      <p class="text-yellow-300 font-medium mb-4">
+        Don’t get left behind. Start your transformation today.
+      </p>
+
+      <button class="px-8 py-3 bg-white text-red-800 font-semibold rounded-lg shadow">
+        Reserve a Callback
+      </button>
+    </div>
+
+  </div>
+</section>
+<!-- ================= P1,2 ================= -->
+ <!-- ================= HOME : QUOTE ================= -->
+<section class="bg-slate-50">
+  <div class="max-w-5xl mx-auto px-6 py-20 text-center">
+
+    <p class="text-xl md:text-2xl font-medium text-gray-700 italic leading-relaxed">
+      “The future belongs to those who learn more skills and combine them in creative ways.”
+    </p>
+
+    <p class="mt-4 text-sm text-gray-500">
+      — Robert Greene
+    </p>
+
+  </div>
+</section>
+
+<!-- ================= HOME : MISSION ================= -->
+<section class="bg-white">
+  <div class="max-w-7xl mx-auto px-6 py-24">
+
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="inline-block mb-3 px-4 py-1 text-xs bg-blue-100 text-blue-700 rounded-full">
+        Our Mission
+      </span>
+
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        Your Success is Our Mission
+      </h2>
+
+      <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+        We provide end-to-end career-focused learning with hands-on training,
+        real-world projects, and strong placement support — helping learners
+        confidently transition into Data, AI & Analytics roles.
+      </p>
+    </div>
+
+    <!-- FEATURES GRID -->
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="border rounded-xl p-6 hover:shadow-md transition">
+        <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-4 p-2">
+          <img src="1.png" alt="Icon" class="w-full h-full object-contain" />
+        </div>
+        <h3 class="font-semibold mb-2">Hands-on Learning</h3>
+        <p class="text-sm text-gray-500">
+          Live classes, assignments, and real datasets.
+        </p>
+      </div>
+
+      <div class="border rounded-xl p-6 hover:shadow-md transition">
+        <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-4 p-2">
+          <img src="1.png" alt="Icon" class="w-full h-full object-contain" />
+        </div>
+        <h3 class="font-semibold mb-2">Latest Curriculum</h3>
+        <p class="text-sm text-gray-500">
+          Content aligned with current industry needs.
+        </p>
+      </div>
+
+      <div class="border rounded-xl p-6 hover:shadow-md transition">
+        <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-4 p-2">
+          <img src="1.png" alt="Icon" class="w-full h-full object-contain" />
+        </div>
+        <h3 class="font-semibold mb-2">100% Job Assistance</h3>
+        <p class="text-sm text-gray-500">
+          Dedicated PAT team for placements & referrals.
+        </p>
+      </div>
+
+      <div class="border rounded-xl p-6 hover:shadow-md transition">
+        <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-4 p-2">
+          <img src="1.png" alt="Icon" class="w-full h-full object-contain" />
+        </div>
+        <h3 class="font-semibold mb-2">Real-Time Projects</h3>
+        <p class="text-sm text-gray-500">
+          Capstone projects based on real business use cases.
+        </p>
+      </div>
+
+      <div class="border rounded-xl p-6 hover:shadow-md transition">
+        <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-4 p-2">
+          <img src="1.png" alt="Icon" class="w-full h-full object-contain" />
+        </div>
+        <h3 class="font-semibold mb-2">Industry Mentors</h3>
+        <p class="text-sm text-gray-500">
+          Learn directly from working professionals.
+        </p>
+      </div>
+
+      <div class="border rounded-xl p-6 hover:shadow-md transition">
+        <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-4 p-2">
+          <img src="1.png" alt="Icon" class="w-full h-full object-contain" />
+        </div>
+        <h3 class="font-semibold mb-2">Internship Experience</h3>
+        <p class="text-sm text-gray-500">
+          3–6 month internship with certification.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- ================= P1,3================= -->
+ <!-- ================= HOME : INDUSTRY LEADERS ================= -->
+<section class="bg-slate-50">
+  <div class="max-w-7xl mx-auto px-6 py-24">
+
+    <div class="text-center mb-16">
+      <span class="inline-block mb-3 px-4 py-1 text-xs bg-blue-100 text-blue-700 rounded-full">
+        Expert Trainers
+      </span>
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        Learn from Industry Leaders
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Our trainers bring real-world industry experience into the classroom.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="bg-white border rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-shadow">
+        <div class="h-48 bg-gray-100 rounded-lg mb-4 overflow-hidden">
+          <img src="images/trainer_neeraj.png" alt="Neeraj PC" class="w-full h-full object-cover" />
+        </div>
+        <h3 class="font-semibold text-lg">Neeraj PC</h3>
+        <p class="text-sm text-blue-600">Founder & Lead Trainer</p>
+      </div>
+
+      <div class="bg-white border rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-shadow">
+        <div class="h-48 bg-gray-100 rounded-lg mb-4 overflow-hidden">
+          <img src="images/trainer_lakshmi.png" alt="Lakshmi Achar" class="w-full h-full object-cover" />
+        </div>
+        <h3 class="font-semibold text-lg">Lakshmi Achar</h3>
+        <p class="text-sm text-blue-600">Senior Data Scientist</p>
+      </div>
+
+      <div class="bg-white border rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-shadow">
+        <div class="h-48 bg-gray-100 rounded-lg mb-4 overflow-hidden">
+          <img src="images/trainer_megha.png" alt="Megha" class="w-full h-full object-cover" />
+        </div>
+        <h3 class="font-semibold text-lg">Megha</h3>
+        <p class="text-sm text-blue-600">AI / ML Engineer</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= HOME : FAQ ================= -->
+<section class="bg-white">
+  <div class="max-w-6xl mx-auto px-6 py-24">
+
+    <div class="text-center mb-14">
+      <h2 class="text-3xl md:text-4xl font-bold mb-2">FAQ</h2>
+      <p class="text-gray-600">Got questions? We've got answers</p>
+    </div>
+
+    <div class="space-y-4" id="faq-container">
+
+      <!-- FAQ ITEM -->
+      <div class="border rounded-lg">
+        <button class="w-full text-left p-5 font-semibold faq-question">
+          What are the eligibility criteria for joining?
+        </button>
+        <div class="faq-answer hidden px-5 pb-5 text-sm text-gray-600">
+          Anyone with basic computer knowledge can join our courses. A graduation degree is
+          preferred but not mandatory. We welcome freshers, working professionals, and career switchers.
+        </div>
+      </div>
+
+      <div class="border rounded-lg">
+        <button class="w-full text-left p-5 font-semibold faq-question">
+          Do you provide placement assistance?
+        </button>
+        <div class="faq-answer hidden px-5 pb-5 text-sm text-gray-600">
+          Yes! We have a dedicated PAT (Placement Assistance Team) that provides 100% job assistance,
+          including resume building, mock interviews, and direct company referrals. Weekly job openings
+          are shared with students.
+        </div>
+      </div>
+
+      <div class="border rounded-lg">
+        <button class="w-full text-left p-5 font-semibold faq-question">
+          Can I take individual modules instead of full courses?
+        </button>
+        <div class="faq-answer hidden px-5 pb-5 text-sm text-gray-600">
+          Absolutely! We offer individual modules like Python (₹15k), SQL (₹10k),
+          Power BI/Tableau/Excel (₹15k), and Machine Learning (₹20k).
+        </div>
+      </div>
+
+      <div class="border rounded-lg">
+        <button class="w-full text-left p-5 font-semibold faq-question">
+          What is the mode of training?
+        </button>
+        <div class="faq-answer hidden px-5 pb-5 text-sm text-gray-600">
+          All training is conducted online through live interactive sessions.
+          LMS access with recordings, notes, and additional resources is provided.
+        </div>
+      </div>
+
+      <div class="border rounded-lg">
+        <button class="w-full text-left p-5 font-semibold faq-question">
+          How long do I have access to course materials?
+        </button>
+        <div class="faq-answer hidden px-5 pb-5 text-sm text-gray-600">
+          You get lifetime access to all course materials, recordings, and LMS content.
+          Unlimited retakes are allowed at no extra cost.
+        </div>
+      </div>
+
+      <div class="border rounded-lg">
+        <button class="w-full text-left p-5 font-semibold faq-question">
+          What if I miss a class?
+        </button>
+        <div class="faq-answer hidden px-5 pb-5 text-sm text-gray-600">
+          All sessions are recorded. You can watch recordings, attend the same session
+          in the next batch, or opt for doubt-solving sessions.
+        </div>
+      </div>
+
+      <div class="border rounded-lg">
+        <button class="w-full text-left p-5 font-semibold faq-question">
+          Do you provide internship certificates?
+        </button>
+        <div class="faq-answer hidden px-5 pb-5 text-sm text-gray-600">
+          Yes, all courses include a 3–6 month internship component with an internship certificate.
+        </div>
+      </div>
+
+      <div class="border rounded-lg">
+        <button class="w-full text-left p-5 font-semibold faq-question">
+          What are the payment options?
+        </button>
+        <div class="faq-answer hidden px-5 pb-5 text-sm text-gray-600">
+          We accept UPI, credit/debit cards, bank transfers, and EMI options
+          for courses above ₹40,000.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= HOME : FINAL CTA ================= -->
+<section class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white relative overflow-hidden">
+  <div class="absolute left-0 bottom-0 w-64 h-64 opacity-5 pointer-events-none transform -translate-x-1/2 translate-y-1/2">
+    <img src="1.png" alt="" class="w-full h-full" />
+  </div>
+  <div class="max-w-7xl mx-auto px-6 py-20 text-center relative z-10">
+
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+      Ready to Transform Your Career?
+    </h2>
+
+    <p class="text-blue-100 max-w-2xl mx-auto mb-8">
+      Join 5000+ learners who have accelerated their careers with NeoNex Mindx.
+    </p>
+
+    <div class="flex justify-center gap-4">
+      <button class="px-8 py-3 bg-white text-blue-800 font-semibold rounded-lg">
+        View All Courses
+      </button>
+      <a href="tel:8088104708"
+         class="px-8 py-3 bg-blue-600 font-semibold rounded-lg">
+        Call 8088104708
+      </a>
+    </div>
+
+  </div>
+</section>
+
+</div> <!-- END PAGE HOME -->
+
+<!-- ================= FAQ ACCORDION SCRIPT ================= -->
+<script>
+  const questions = document.querySelectorAll('.faq-question');
+
+  questions.forEach(q => {
+    q.addEventListener('click', () => {
+      questions.forEach(other => {
+        if (other !== q) {
+          other.nextElementSibling.classList.add('hidden');
+        }
+      });
+      q.nextElementSibling.classList.toggle('hidden');
+    });
+  });
+</script>
+<!-- ================= P1,4 ================= -->
+ <!-- ================= PAGE : COURSES ================= -->
+<div id="page-courses" class="hidden">
+
+<!-- ================= COURSES HERO ================= -->
+<section class="bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800 text-white">
+  <div class="max-w-7xl mx-auto px-6 py-24 text-center">
+    <span class="inline-block mb-4 px-4 py-1 text-xs bg-blue-700 rounded-full">
+      Our Programs
+    </span>
+
+    <h1 class="text-4xl md:text-5xl font-bold mb-6">
+      Industry-Leading Courses
+    </h1>
+
+    <p class="max-w-3xl mx-auto text-blue-100 text-lg">
+      Comprehensive training programs designed to make you job-ready
+      in <strong>4–9 months</strong>
+    </p>
+  </div>
+</section>
+
+<!-- ================= COURSES QUOTE ================= -->
+<section class="bg-slate-50">
+  <div class="max-w-4xl mx-auto px-6 py-16 text-center">
+    <p class="text-lg md:text-xl italic text-gray-700">
+      “Artificial intelligence is the new electricity.”
+    </p>
+    <p class="mt-3 text-sm text-gray-500">
+      — Andrew Ng, Stanford University
+    </p>
+  </div>
+</section>
+
+<!-- ================= COURSES HEADING ================= -->
+<section class="bg-white">
+  <div class="max-w-7xl mx-auto px-6 py-20">
+    <div class="text-center mb-14">
+      <h2 class="text-3xl font-bold mb-3">
+        Complete Training Programs
+      </h2>
+      <p class="text-gray-600">
+        Job-focused programs with hands-on projects & placement support
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= P2,1 ================= -->
+ <!-- ================= COURSES : PROGRAM CARDS ================= -->
+<section class="bg-white">
+  <div class="max-w-7xl mx-auto px-6 pb-24">
+    <div class="grid md:grid-cols-2 gap-10">
+
+      <!-- Data Analytics -->
+      <div class="border rounded-xl overflow-hidden">
+        <div class="h-48 bg-blue-50 flex items-center justify-center p-8">
+          <img src="1.png" alt="Course" class="h-24 w-auto opacity-20" />
+        </div>
+        <div class="p-6">
+          <h3 class="font-semibold text-lg mb-2">Data Analytics</h3>
+          <p class="text-sm text-gray-500 mb-3">
+            Python, SQL, BI tools & analytics
+          </p>
+          <div class="flex justify-between items-center">
+            <div>
+              <div class="text-xl font-bold">₹40,000</div>
+              <div class="text-sm text-gray-400 line-through">₹50,000</div>
+            </div>
+            <button class="px-5 py-2 bg-blue-600 text-white rounded-lg">
+              Enquire Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Business Analytics -->
+      <div class="border rounded-xl overflow-hidden">
+        <div class="h-48 bg-indigo-50 flex items-center justify-center p-8">
+          <img src="1.png" alt="Course" class="h-24 w-auto opacity-20" />
+        </div>
+        <div class="p-6">
+          <h3 class="font-semibold text-lg mb-2">Business Analytics</h3>
+          <p class="text-sm text-gray-500 mb-3">
+            Excel, SQL, Power BI dashboards
+          </p>
+          <div class="flex justify-between items-center">
+            <div>
+              <div class="text-xl font-bold">₹45,000</div>
+              <div class="text-sm text-gray-400 line-through">₹55,000</div>
+            </div>
+            <button class="px-5 py-2 bg-blue-600 text-white rounded-lg">
+              Enquire Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Science -->
+      <div class="border rounded-xl overflow-hidden">
+        <div class="h-48 bg-cyan-50 flex items-center justify-center p-8">
+          <img src="1.png" alt="Course" class="h-24 w-auto opacity-20" />
+        </div>
+        <div class="p-6">
+          <h3 class="font-semibold text-lg mb-2">Data Science</h3>
+          <p class="text-sm text-gray-500 mb-3">
+            ML, statistics & real-world projects
+          </p>
+          <div class="flex justify-between items-center">
+            <div>
+              <div class="text-xl font-bold">₹55,000</div>
+              <div class="text-sm text-gray-400 line-through">₹65,000</div>
+            </div>
+            <button class="px-5 py-2 bg-blue-600 text-white rounded-lg">
+              Enquire Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Science & AI -->
+      <div class="border rounded-xl overflow-hidden">
+        <div class="h-48 bg-blue-100 flex items-center justify-center p-8">
+          <img src="1.png" alt="Course" class="h-24 w-auto opacity-30" />
+        </div>
+        <div class="p-6">
+          <h3 class="font-semibold text-lg mb-2">Data Science & AI</h3>
+          <p class="text-sm text-gray-500 mb-3">
+            ML, DL, Gen AI & deployment
+          </p>
+          <div class="flex justify-between items-center">
+            <div>
+              <div class="text-xl font-bold">₹65,000</div>
+              <div class="text-sm text-gray-400 line-through">₹75,000</div>
+            </div>
+            <button class="px-5 py-2 bg-blue-600 text-white rounded-lg">
+              Enquire Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= P2,2 ================= -->
+ <!-- ================= COURSES : INDIVIDUAL MODULES ================= -->
+<section class="bg-white">
+  <div class="max-w-7xl mx-auto px-6 py-24">
+
+    <div class="text-center mb-14">
+      <h2 class="text-2xl font-bold mb-2">Individual Modules</h2>
+      <p class="text-gray-500 text-sm">
+        Learn specific skills independently
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+
+      <div class="border rounded-xl p-6 text-center">
+        <h3 class="font-semibold">Python</h3>
+        <p class="text-xs text-gray-500 mb-3">6–8 weeks</p>
+        <div class="text-xl font-bold">₹15,000</div>
+      </div>
+
+      <div class="border rounded-xl p-6 text-center">
+        <h3 class="font-semibold">SQL</h3>
+        <p class="text-xs text-gray-500 mb-3">4–6 weeks</p>
+        <div class="text-xl font-bold">₹10,000</div>
+      </div>
+
+      <div class="border rounded-xl p-6 text-center">
+        <h3 class="font-semibold">Power BI / Tableau</h3>
+        <p class="text-xs text-gray-500 mb-3">5–6 weeks</p>
+        <div class="text-xl font-bold">₹15,000</div>
+      </div>
+
+      <div class="border rounded-xl p-6 text-center">
+        <h3 class="font-semibold">Machine Learning</h3>
+        <p class="text-xs text-gray-500 mb-3">8–10 weeks</p>
+        <div class="text-xl font-bold">₹20,000</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= P2,3 ================= -->
+ <!-- ================= COURSES : BATCH TIMING ================= -->
+<section class="bg-slate-50">
+  <div class="max-w-7xl mx-auto px-6 py-24">
+
+    <div class="text-center mb-14">
+      <h2 class="text-3xl font-bold mb-3">Choose Your Batch Timing</h2>
+      <p class="text-gray-600 text-sm">
+        Weekday and weekend flexibility
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+
+      <div class="bg-white border rounded-xl p-6">
+        <h3 class="font-semibold text-lg text-blue-700 mb-2">Morning Batch</h3>
+        <p class="text-sm text-gray-600">⏰ 7:00 AM – 9:30 AM</p>
+        <p class="text-xs text-gray-500">Mon–Thu + Friday soft skills</p>
+      </div>
+
+      <div class="bg-white border rounded-xl p-6">
+        <h3 class="font-semibold text-lg text-blue-700 mb-2">Evening Batch</h3>
+        <p class="text-sm text-gray-600">⏰ 8:00 PM – 10:00 PM</p>
+        <p class="text-xs text-gray-500">Mon–Thu + Friday soft skills</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</div> <!-- END PAGE COURSES -->
+
+<!-- ================= P2,4 ================= -->
+ <!-- ================= PAGE : FEES & OFFERS ================= -->
+<div id="page-pricing" class="hidden">
+
+<!-- ================= PRICING : HERO ================= -->
+<section class="bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800 text-white">
+  <div class="max-w-7xl mx-auto px-6 py-24 text-center">
+
+    <span class="inline-block mb-4 px-4 py-1 text-xs bg-green-600 rounded-full">
+      Limited Time Offers
+    </span>
+
+    <h1 class="text-4xl md:text-5xl font-bold mb-6">
+      Transparent Pricing
+    </h1>
+
+    <p class="max-w-3xl mx-auto text-blue-100 text-lg">
+      Invest in your future with affordable, value-packed courses
+    </p>
+
+  </div>
+</section>
+
+<!-- ================= PRICING : CURRENT OFFERS ================= -->
+<section class="bg-slate-50">
+  <div class="max-w-7xl mx-auto px-6 py-24">
+
+    <div class="text-center mb-14">
+      <h2 class="text-2xl font-bold mb-2">
+        Current Offers & Benefits
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Offer 1 -->
+      <div class="bg-white border rounded-xl p-6 flex gap-4">
+        <div class="text-green-600 text-xl">✔</div>
+        <p class="text-sm text-gray-700">
+          <strong>3–6 months internship</strong> with certificate included
+        </p>
+      </div>
+
+      <!-- Offer 2 -->
+      <div class="bg-white border rounded-xl p-6 flex gap-4">
+        <div class="text-green-600 text-xl">✔</div>
+        <p class="text-sm text-gray-700">
+          <strong>EMI options</strong> available for courses above ₹40,000
+        </p>
+      </div>
+
+      <!-- Offer 3 -->
+      <div class="bg-white border rounded-xl p-6 flex gap-4">
+        <div class="text-green-600 text-xl">✔</div>
+        <p class="text-sm text-gray-700">
+          <strong>Early bird discount:</strong> Additional 5% off for first 10 enrollments
+        </p>
+      </div>
+
+      <!-- Offer 4 -->
+      <div class="bg-white border rounded-xl p-6 flex gap-4">
+        <div class="text-green-600 text-xl">✔</div>
+        <p class="text-sm text-gray-700">
+          <strong>Refer a friend</strong> and get ₹5,000 cashback
+        </p>
+      </div>
+
+      <!-- Offer 5 -->
+      <div class="bg-white border rounded-xl p-6 flex gap-4">
+        <div class="text-green-600 text-xl">✔</div>
+        <p class="text-sm text-gray-700">
+          <strong>Group discount:</strong> 10% off for groups of 3 or more
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- ================= P3,1================= -->
+ <!-- ================= PRICING : COMPLETE TRAINING PROGRAMS ================= -->
+<section class="bg-white">
+  <div class="max-w-7xl mx-auto px-6 py-24">
+
+    <div class="text-center mb-14">
+      <h2 class="text-2xl font-bold mb-2">
+        Complete Training Programs
+      </h2>
+      <p class="text-gray-500 text-sm">
+        All-inclusive packages with internship & placement support
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10">
+
+      <!-- Data Analytics -->
+      <div class="border rounded-xl p-6">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="font-semibold">Data Analytics</h3>
+          <span class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded">
+            15% OFF
+          </span>
+        </div>
+
+        <p class="text-xs text-gray-500 mb-3">4–5 months</p>
+
+        <div class="text-2xl font-bold mb-1">₹40,000</div>
+        <div class="text-sm text-gray-400 line-through mb-2">₹50,000</div>
+        <p class="text-xs text-green-600 mb-4">Save ₹10,000</p>
+
+        <p class="text-sm font-medium mb-2">What’s included:</p>
+        <ul class="text-sm text-gray-600 space-y-1 mb-6">
+          <li>✔ 4 comprehensive modules</li>
+          <li>✔ Capstone & real-time projects</li>
+          <li>✔ Internship certificate</li>
+          <li>✔ Free Git, Project Management, Deployment</li>
+        </ul>
+
+        <button class="w-full bg-blue-600 text-white py-2 rounded-lg">
+          Enroll Now
+        </button>
+      </div>
+
+      <!-- Business Analytics -->
+      <div class="border rounded-xl p-6">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="font-semibold">Business Analytics</h3>
+          <span class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded">
+            15% OFF
+          </span>
+        </div>
+
+        <p class="text-xs text-gray-500 mb-3">4–5 months</p>
+
+        <div class="text-2xl font-bold mb-1">₹45,000</div>
+        <div class="text-sm text-gray-400 line-through mb-2">₹55,000</div>
+        <p class="text-xs text-green-600 mb-4">Save ₹10,000</p>
+
+        <p class="text-sm font-medium mb-2">What’s included:</p>
+        <ul class="text-sm text-gray-600 space-y-1 mb-6">
+          <li>✔ 3 comprehensive modules</li>
+          <li>✔ Capstone & real-time projects</li>
+          <li>✔ Internship certificate</li>
+          <li>✔ Free Git, Project Management, Deployment</li>
+        </ul>
+
+        <button class="w-full bg-blue-600 text-white py-2 rounded-lg">
+          Enroll Now
+        </button>
+      </div>
+
+      <!-- Data Science -->
+      <div class="border rounded-xl p-6">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="font-semibold">Data Science</h3>
+          <span class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded">
+            15% OFF
+          </span>
+        </div>
+
+        <p class="text-xs text-gray-500 mb-3">5–7 months</p>
+
+        <div class="text-2xl font-bold mb-1">₹55,000</div>
+        <div class="text-sm text-gray-400 line-through mb-2">₹65,000</div>
+        <p class="text-xs text-green-600 mb-4">Save ₹10,000</p>
+
+        <p class="text-sm font-medium mb-2">What’s included:</p>
+        <ul class="text-sm text-gray-600 space-y-1 mb-6">
+          <li>✔ 5 comprehensive modules</li>
+          <li>✔ Capstone & real-time projects</li>
+          <li>✔ Internship certificate</li>
+          <li>✔ Free Git, Project Management, Deployment</li>
+        </ul>
+
+        <button class="w-full bg-blue-600 text-white py-2 rounded-lg">
+          Enroll Now
+        </button>
+      </div>
+
+      <!-- Data Science & AI -->
+      <div class="border rounded-xl p-6">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="font-semibold">Data Science & AI</h3>
+          <span class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded">
+            15% OFF
+          </span>
+        </div>
+
+        <p class="text-xs text-gray-500 mb-3">6–9 months</p>
+
+        <div class="text-2xl font-bold mb-1">₹65,000</div>
+        <div class="text-sm text-gray-400 line-through mb-2">₹75,000</div>
+        <p class="text-xs text-green-600 mb-4">Save ₹10,000</p>
+
+        <p class="text-sm font-medium mb-2">What’s included:</p>
+        <ul class="text-sm text-gray-600 space-y-1 mb-6">
+          <li>✔ 6 comprehensive modules</li>
+          <li>✔ Capstone & real-time projects</li>
+          <li>✔ Internship certificate</li>
+          <li>✔ Free Git, Prompt Engineering, Gen AI</li>
+        </ul>
+
+        <button class="w-full bg-blue-600 text-white py-2 rounded-lg">
+          Enroll Now
+        </button>
+      </div>
+
+      <!-- Data Engineering -->
+      <div class="border rounded-xl p-6">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="font-semibold">Data Engineering</h3>
+          <span class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded">
+            15% OFF
+          </span>
+        </div>
+
+        <p class="text-xs text-gray-500 mb-3">6–8 months</p>
+
+        <div class="text-2xl font-bold mb-1">₹70,000</div>
+        <div class="text-sm text-gray-400 line-through mb-2">₹80,000</div>
+        <p class="text-xs text-green-600 mb-4">Save ₹10,000</p>
+
+        <p class="text-sm font-medium mb-2">What’s included:</p>
+        <ul class="text-sm text-gray-600 space-y-1 mb-6">
+          <li>✔ 6 comprehensive modules</li>
+          <li>✔ Capstone & real-time projects</li>
+          <li>✔ Internship certificate</li>
+          <li>✔ Free Git, Project Management, Deployment</li>
+        </ul>
+
+        <button class="w-full bg-blue-600 text-white py-2 rounded-lg">
+          Enroll Now
+        </button>
+      </div>
+
+      <!-- AI / ML Engineering -->
+      <div class="border rounded-xl p-6">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="font-semibold">AI / ML Engineering</h3>
+          <span class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded">
+            15% OFF
+          </span>
+        </div>
+
+        <p class="text-xs text-gray-500 mb-3">7–9 months</p>
+
+        <div class="text-2xl font-bold mb-1">₹90,000</div>
+        <div class="text-sm text-gray-400 line-through mb-2">₹1,00,000</div>
+        <p class="text-xs text-green-600 mb-4">Save ₹10,000</p>
+
+        <p class="text-sm font-medium mb-2">What’s included:</p>
+        <ul class="text-sm text-gray-600 space-y-1 mb-6">
+          <li>✔ 7 comprehensive modules</li>
+          <li>✔ Capstone & real-time projects</li>
+          <li>✔ Internship certificate</li>
+          <li>✔ Free Gen AI, Agentic AI, Automation</li>
+        </ul>
+
+        <button class="w-full bg-blue-600 text-white py-2 rounded-lg">
+          Enroll Now
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- ================= P3,2 ================= -->
+ <!-- ================= PRICING : INDIVIDUAL MODULES ================= -->
+<section class="bg-white">
+  <div class="max-w-7xl mx-auto px-6 py-24">
+
+    <div class="text-center mb-14">
+      <h2 class="text-2xl font-bold mb-2">Individual Modules</h2>
+      <p class="text-gray-500 text-sm">
+        Learn specific skills without committing to a full course
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+
+      <!-- Python -->
+      <div class="border rounded-xl p-6 text-center">
+        <h3 class="font-semibold mb-1">Python</h3>
+        <p class="text-xs text-gray-500 mb-4">6–8 weeks</p>
+        <div class="text-xl font-bold mb-1">₹15,000</div>
+        <p class="text-xs text-green-600 mb-4">Best Seller</p>
+        <button class="text-blue-600 text-sm font-medium">Enroll</button>
+      </div>
+
+      <!-- SQL -->
+      <div class="border rounded-xl p-6 text-center">
+        <h3 class="font-semibold mb-1">SQL</h3>
+        <p class="text-xs text-gray-500 mb-4">4–6 weeks</p>
+        <div class="text-xl font-bold mb-1">₹10,000</div>
+        <p class="text-xs text-green-600 mb-4">Most Popular</p>
+        <button class="text-blue-600 text-sm font-medium">Enroll</button>
+      </div>
+
+      <!-- Power BI / Tableau / Excel -->
+      <div class="border rounded-xl p-6 text-center">
+        <h3 class="font-semibold mb-1">Power BI / Tableau / Excel</h3>
+        <p class="text-xs text-gray-500 mb-4">5–6 weeks</p>
+        <div class="text-xl font-bold mb-1">₹15,000</div>
+        <button class="text-blue-600 text-sm font-medium">Enroll</button>
+      </div>
+
+      <!-- Machine Learning -->
+      <div class="border rounded-xl p-6 text-center">
+        <h3 class="font-semibold mb-1">Machine Learning</h3>
+        <p class="text-xs text-gray-500 mb-4">8–10 weeks</p>
+        <div class="text-xl font-bold mb-1">₹20,000</div>
+        <p class="text-xs text-green-600 mb-4">Top Choice</p>
+        <button class="text-blue-600 text-sm font-medium">Enroll</button>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= PRICING : EVERY COURSE INCLUDES ================= -->
+<section class="bg-slate-50">
+  <div class="max-w-7xl mx-auto px-6 py-24">
+
+    <div class="text-center mb-14">
+      <h2 class="text-2xl font-bold mb-2">Every Course Includes</h2>
+      <p class="text-gray-500 text-sm">
+        Comprehensive support and resources for your success
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto text-sm">
+
+      <div class="bg-white border rounded-xl p-6">
+        ✔ Unlimited module retakes at no extra cost
+      </div>
+
+      <div class="bg-white border rounded-xl p-6">
+        ✔ 100% job assistance with PAT team support
+      </div>
+
+      <div class="bg-white border rounded-xl p-6">
+        ✔ 4+ Capstone & 2+ Real-time industry projects
+      </div>
+
+      <div class="bg-white border rounded-xl p-6">
+        ✔ Lifetime LMS access with notes & recordings
+      </div>
+
+      <div class="bg-white border rounded-xl p-6">
+        ✔ Weekly job openings and career guidance
+      </div>
+
+      <div class="bg-white border rounded-xl p-6">
+        ✔ Soft skills training & resume building
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- ================= P3,3================= -->
+ <!-- ================= PRICING : FINAL CTA ================= -->
+<section class="bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800 text-white">
+  <div class="max-w-7xl mx-auto px-6 py-24 text-center">
+
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+      Ready to Invest in Your Future?
+    </h2>
+
+    <p class="text-blue-100 max-w-2xl mx-auto mb-10">
+      Don’t let budget be a barrier. We offer flexible EMI options and special discounts.
+    </p>
+
+    <div class="flex justify-center gap-6">
+      <button class="px-8 py-3 bg-blue-600 rounded-lg font-semibold">
+        Chat with Our Team
+      </button>
+      <button class="px-8 py-3 border border-white rounded-lg font-semibold">
+        Email Us
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-slate-900 text-slate-300">
+  <div class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-4 gap-10">
+
+    <!-- About -->
+    <div>
+      <div class="flex items-center mb-4">
+        <img src="5.png" alt="NeoNex Logo" class="h-8 w-auto filter brightness-0 invert opacity-90" />
+      </div>
+      <p class="text-sm text-slate-400">
+        Premier training institute for Data Science, AI/ML, and Analytics.
+        Transforming careers with hands-on, practical learning.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h4 class="font-semibold text-white mb-4">Quick Links</h4>
+      <ul class="space-y-2 text-sm">
+        <li>Home</li>
+        <li>Courses</li>
+        <li>Fees & Offers</li>
+        <li>Success Stories</li>
+      </ul>
+    </div>
+
+    <!-- Popular Courses -->
+    <div>
+      <h4 class="font-semibold text-white mb-4">Popular Courses</h4>
+      <ul class="space-y-2 text-sm">
+        <li>Data Analytics</li>
+        <li>Data Science</li>
+        <li>AI / ML Engineering</li>
+        <li>Data Engineering</li>
+        <li>Business Analytics</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h4 class="font-semibold text-white mb-4">Contact Us</h4>
+      <ul class="space-y-2 text-sm">
+        <li>📞 8088104708</li>
+        <li>✉ neonexminds701@gmail.com</li>
+        <li>📍 Online Training (India)</li>
+        <li>⏰ Mon–Sat: 9AM – 8PM</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="text-center text-xs text-slate-500 py-6 border-t border-slate-800">
+    © 2025 NeoNex Mindx. All rights reserved.
+  </div>
+</footer>
+
+</div> <!-- END PAGE PRICING -->
+<!-- ================= P3,4 ================= -->
+ <!-- ================= PAGE : SUCCESS STORIES ================= -->
+<div id="page-success" class="hidden">
+
+<!-- ================= SUCCESS : HERO ================= -->
+<section class="bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800 text-white">
+  <div class="max-w-7xl mx-auto px-6 py-24 text-center">
+
+    <span class="inline-block mb-4 px-4 py-1 text-xs bg-yellow-500 text-black rounded-full">
+      Success Stories
+    </span>
+
+    <h1 class="text-4xl md:text-5xl font-bold mb-6">
+      Real People, Real Success
+    </h1>
+
+    <p class="max-w-3xl mx-auto text-blue-100 text-lg">
+      Join thousands of students who have transformed their careers with NeoNex Mindx
+    </p>
+
+  </div>
+</section>
+
+<!-- ================= SUCCESS : STATS ================= -->
+<section class="bg-white">
+  <div class="max-w-7xl mx-auto px-6 py-20">
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+
+      <div>
+        <div class="text-3xl font-bold text-blue-600 mb-1">2500+</div>
+        <p class="text-sm text-gray-500">Careers Transformed</p>
+      </div>
+
+      <div>
+        <div class="text-3xl font-bold text-blue-600 mb-1">₹8.5 LPA</div>
+        <p class="text-sm text-gray-500">Average Package</p>
+      </div>
+
+      <div>
+        <div class="text-3xl font-bold text-blue-600 mb-1">₹24 LPA</div>
+        <p class="text-sm text-gray-500">Top Package</p>
+      </div>
+
+      <div>
+        <div class="text-3xl font-bold text-blue-600 mb-1">150+</div>
+        <p class="text-sm text-gray-500">Companies Hiring</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- ================= P4,1 ================= -->
+ <!-- ================= SUCCESS : TESTIMONIALS ================= -->
+<section class="bg-white">
+  <div class="max-w-7xl mx-auto px-6 py-24">
+
+    <div class="text-center mb-16">
+      <h2 class="text-2xl font-bold mb-2">Student Testimonials</h2>
+      <p class="text-gray-500 text-sm">
+        Hear from our successful alumni
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+
+      <!-- Ananya -->
+      <div class="border rounded-xl p-6 bg-white shadow-sm">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="w-14 h-14 rounded-full bg-gray-100 overflow-hidden border-2 border-blue-50">
+            <img src="images/alumni_ananya.png" alt="Ananya Reddy" class="w-full h-full object-cover" />
+          </div>
+          <div>
+            <h4 class="font-semibold text-sm">Ananya Reddy</h4>
+            <p class="text-xs text-gray-500">Data Analyst at Accenture</p>
+          </div>
+        </div>
+
+        <div class="text-yellow-400 mb-3">★★★★★</div>
+
+        <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+          “NeoNex Mindx transformed my career completely. Coming from a
+          non-technical background, I gained confidence through hands-on
+          projects and industry-focused training.”
+        </p>
+
+        <p class="text-xs text-green-600 font-medium">
+          ▲ 150% Salary Hike
+        </p>
+      </div>
+
+      <!-- Vikram -->
+      <div class="border rounded-xl p-6 bg-white shadow-sm">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="w-14 h-14 rounded-full bg-gray-100 overflow-hidden border-2 border-blue-50">
+            <img src="images/alumni_vikram.png" alt="Vikram Singh" class="w-full h-full object-cover" />
+          </div>
+          <div>
+            <h4 class="font-semibold text-sm">Vikram Singh</h4>
+            <p class="text-xs text-gray-500">ML Engineer at Swiggy</p>
+          </div>
+        </div>
+
+        <div class="text-yellow-400 mb-3">★★★★★</div>
+
+        <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+          “The AI/ML Engineering program was extremely comprehensive.
+          The projects and mentorship prepared me well for industry-level
+          challenges.”
+        </p>
+
+        <p class="text-xs text-green-600 font-medium">
+          ▲ 200% Salary Hike
+        </p>
+      </div>
+
+      <!-- Meera -->
+      <div class="border rounded-xl p-6 bg-white shadow-sm">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="w-14 h-14 rounded-full bg-gray-100 overflow-hidden border-2 border-blue-50">
+            <img src="images/alumni_meera.png" alt="Meera Krishnan" class="w-full h-full object-cover" />
+          </div>
+          <div>
+            <h4 class="font-semibold text-sm">Meera Krishnan</h4>
+            <p class="text-xs text-gray-500">Data Engineer at Zomato</p>
+          </div>
+        </div>
+
+        <div class="text-yellow-400 mb-3">★★★★★</div>
+
+        <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+          “Switching from manual testing to data engineering felt risky,
+          but NeoNex Mindx made the transition smooth with structured
+          learning and real-time projects.”
+        </p>
+
+        <p class="text-xs text-green-600 font-medium">
+          ▲ 180% Salary Hike
+        </p>
+      </div>
+
+      <!-- Rohit -->
+      <div class="border rounded-xl p-6 bg-white shadow-sm">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="w-14 h-14 rounded-full bg-gray-100 overflow-hidden border-2 border-blue-50">
+            <img src="images/alumni_rohit.png" alt="Rohit Sharma" class="w-full h-full object-cover" />
+          </div>
+          <div>
+            <h4 class="font-semibold text-sm">Rohit Sharma</h4>
+            <p class="text-xs text-gray-500">Business Analyst at Nykaa</p>
+          </div>
+        </div>
+
+        <div class="text-yellow-400 mb-3">★★★★★</div>
+
+        <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+          “As someone from a commerce background, I was nervous.
+          The structured approach and constant support helped me
+          confidently move into analytics.”
+        </p>
+
+        <p class="text-xs text-green-600 font-medium">
+          ▲ 160% Salary Hike
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- ================= P4,2 ================= -->
+ <!-- ================= SUCCESS : CTA STRIP ================= -->
+<section class="bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+  <div class="max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center justify-between gap-6">
+
+    <div>
+      <h2 class="text-2xl md:text-3xl font-bold mb-2">
+        Your Success Story Starts Here
+      </h2>
+      <p class="text-blue-100 text-sm max-w-xl">
+        Join 2500+ professionals who made successful career transitions
+        with our guidance and support.
+      </p>
+    </div>
+
+    <button class="px-8 py-3 bg-white text-blue-700 rounded-lg font-semibold">
+      Start Your Journey
+    </button>
+
+  </div>
+</section>
+
+<!-- ================= SUCCESS : ALUMNI COMPANIES ================= -->
+<section class="bg-white">
+  <div class="max-w-7xl mx-auto px-6 py-24">
+
+    <div class="text-center mb-14">
+      <span class="inline-block mb-3 px-4 py-1 text-xs bg-purple-100 text-purple-700 rounded-full">
+        Alumni Network
+      </span>
+      <h2 class="text-3xl font-bold mb-3">
+        Where Our Alumni Work
+      </h2>
+      <p class="text-gray-500 text-sm">
+        Our graduates are now working at leading tech companies
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-3xl mx-auto text-center">
+
+      <!-- Razorpay -->
+      <div class="border rounded-xl p-6">
+        <div class="w-10 h-10 mx-auto mb-3 bg-gray-200 rounded-full"></div>
+        <p class="text-sm font-medium">Razorpay</p>
+      </div>
+
+      <!-- Swiggy -->
+      <div class="border rounded-xl p-6">
+        <div class="w-10 h-10 mx-auto mb-3 bg-gray-200 rounded-full"></div>
+        <p class="text-sm font-medium">Swiggy</p>
+      </div>
+
+      <!-- Zomato -->
+      <div class="border rounded-xl p-6">
+        <div class="w-10 h-10 mx-auto mb-3 bg-gray-200 rounded-full"></div>
+        <p class="text-sm font-medium">Zomato</p>
+      </div>
+
+    </div>
+
+    <p class="text-center text-xs text-gray-500 mt-10">
+      And many more at Myntra, Meesho, Paytm, Accenture, TCS, Infosys, Wipro, and growing startups!
+    </p>
+
+  </div>
+</section>
+<!-- ================= P4,3 ================= -->
+ <!-- ================= SUCCESS : LATEST ARTICLES ================= -->
+<section class="bg-white">
+  <div class="max-w-7xl mx-auto px-6 py-24">
+
+    <div class="text-center mb-14">
+      <span class="inline-block mb-3 px-4 py-1 text-xs bg-green-100 text-green-700 rounded-full">
+        Learning Resources
+      </span>
+      <h2 class="text-3xl font-bold mb-3">
+        Latest Insights & Articles
+      </h2>
+      <p class="text-gray-500 text-sm">
+        Expert advice on career growth and industry trends
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <!-- Article 1 -->
+      <div class="border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+        <div class="h-48 overflow-hidden bg-gray-100">
+          <img src="images/article_ds_2025.png" alt="Data Science 2025" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-5">
+          <p class="text-xs text-blue-600 mb-2">Career Advice</p>
+          <h3 class="font-semibold text-sm mb-2">
+            Why 2025 is the Best Time to Start a Career in Data Science
+          </h3>
+          <p class="text-xs text-gray-500">
+            By Rajesh Kumar • 5 min read
+          </p>
+        </div>
+      </div>
+
+      <!-- Article 2 -->
+      <div class="border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+        <div class="h-48 overflow-hidden bg-gray-100">
+          <img src="images/article_non_tech_roadmap.png" alt="Non-Tech Roadmap" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-5">
+          <p class="text-xs text-blue-600 mb-2">Career Transition</p>
+          <h3 class="font-semibold text-sm mb-2">
+            From Non-Tech to Data Analyst: A Complete Roadmap
+          </h3>
+          <p class="text-xs text-gray-500">
+            By Priya Sharma • 7 min read
+          </p>
+        </div>
+      </div>
+
+      <!-- Article 3 -->
+      <div class="border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+        <div class="h-48 overflow-hidden bg-gray-100">
+          <img src="images/article_ai_skills.png" alt="AI Skills" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-5">
+          <p class="text-xs text-blue-600 mb-2">Technology Trends</p>
+          <h3 class="font-semibold text-sm mb-2">
+            Top 10 AI Skills That Will Make You Irreplaceable in 2025
+          </h3>
+          <p class="text-xs text-gray-500">
+            By Ankit Patel • 6 min read
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= SUCCESS : FINAL CTA ================= -->
+<section class="bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800 text-white">
+  <div class="max-w-7xl mx-auto px-6 py-24 text-center">
+
+    <div class="text-4xl mb-4">🏆</div>
+
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+      Be Our Next Success Story
+    </h2>
+
+    <p class="text-blue-100 max-w-2xl mx-auto mb-10">
+      Your career transformation is just one decision away.
+      Let’s make it happen together.
+    </p>
+
+    <button class="px-8 py-3 bg-blue-600 rounded-lg font-semibold">
+      Get Started Today
+    </button>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-slate-900 text-slate-300">
+  <div class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-4 gap-10">
+
+    <div>
+      <div class="flex items-center mb-4">
+        <img src="5.png" alt="NeoNex Logo" class="h-8 w-auto filter brightness-0 invert opacity-90" />
+      </div>
+      <p class="text-sm text-slate-400">
+        Premier training institute for Data Science, AI/ML, and Analytics.
+        Empowering careers through practical education.
+      </p>
+    </div>
+
+    <div>
+      <h4 class="text-white font-semibold mb-3">Quick Links</h4>
+      <ul class="text-sm space-y-2">
+        <li onclick="showPage('home')" class="cursor-pointer">Home</li>
+        <li onclick="showPage('courses')" class="cursor-pointer">Courses</li>
+        <li onclick="showPage('pricing')" class="cursor-pointer">Fees & Offers</li>
+        <li onclick="showPage('success')" class="cursor-pointer">Success Stories</li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-white font-semibold mb-3">Popular Courses</h4>
+      <ul class="text-sm space-y-2">
+        <li>Data Analytics</li>
+        <li>Data Science</li>
+        <li>AI / ML Engineering</li>
+        <li>Data Engineering</li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-white font-semibold mb-3">Contact Us</h4>
+      <ul class="text-sm space-y-2">
+        <li>📞 8088104708</li>
+        <li>✉ neonexminds701@gmail.com</li>
+        <li>📍 Online Training (India)</li>
+        <li>⏰ Mon–Sat: 9AM – 8PM</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="text-center text-xs text-slate-500 py-6 border-t border-slate-800">
+    © 2025 NeoNex Mindx. All rights reserved.
+  </div>
+</footer>
+
+</div> <!-- END PAGE SUCCESS -->
+
+<!-- ================= NAVIGATION SCRIPT (FINAL) ================= -->
+<script>
+  function showPage(page) {
+    const pages = ['home', 'courses', 'pricing', 'success'];
+    pages.forEach(p => {
+      document.getElementById('page-' + p).classList.add('hidden');
+    });
+    document.getElementById('page-' + page).classList.remove('hidden');
+    window.scrollTo(0, 0);
+  }
+
+  // Default page
+  showPage('home');
+</script>
+
+</body>
+</html>
+<!-- ================= P4,4 ================= -->
