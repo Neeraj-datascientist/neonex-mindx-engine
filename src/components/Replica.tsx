@@ -515,9 +515,9 @@ const Replica = () => {
                                             { title: "Data Analytics", desc: "Master data analysis, visualization & business intelligence", duration: "4-5 months", price: "40,000", strike: "50,000", popular: true, img: "/images/data_analytics.jpeg", features: ["Python, SQL, Excel", "Power BI / Tableau", "Statistics & Analytics", "Real-world Projects", "Placement Support"] },
                                             { title: "Business Analytics", desc: "Learn business metrics, KPIs & strategic decision-making", duration: "4-5 months", price: "45,000", strike: "55,000", popular: false, img: "/images/business_analytics.jpg", features: ["Excel & SQL", "Business Intelligence", "Data Visualization", "Case Studies", "Internship Certificate"] },
                                             { title: "Data Science", desc: "Deep dive into statistics, ML algorithms & predictive modeling", duration: "5-7 months", price: "55,000", strike: "65,000", popular: true, img: "/images/data_science.webp", features: ["Python & R", "Machine Learning", "Statistics", "Deep Learning Basics", "Capstone Project"] },
-                                            { title: "Data Science & AI", desc: "Advanced AI/ML, deep learning & neural networks", duration: "6-9 months", price: "65,000", strike: "75,000", popular: true, img: "/images/data science and ai.jpg", features: ["Advanced ML & AI", "Deep Learning", "NLP & Computer Vision", "Gen AI Fundamentals", "Industry Projects"] },
-                                            { title: "Data Engineering", desc: "Build robust data pipelines, ETL & cloud infrastructure", duration: "6-8 months", price: "70,000", strike: "80,000", popular: false, img: "/images/data engineering.jpg", features: ["SQL & NoSQL", "ETL Pipelines", "Cloud (AWS/Azure)", "Big Data Tools", "Real-time Processing"] },
-                                            { title: "AI / ML Engineering", desc: "Production ML systems, MLOps & model deployment", duration: "7-9 months", price: "90,000", strike: "1,00,000", popular: true, img: "/images/ai ml engineering.jpg", features: ["Advanced ML", "MLOps & Deployment", "Model Optimization", "Cloud ML Services", "End-to-end Projects"] }
+                                            { title: "Data Science & AI", desc: "Advanced AI/ML, deep learning & neural networks", duration: "6-9 months", price: "65,000", strike: "75,000", popular: true, img: "/images/data_science_and_ai.jpg", features: ["Advanced ML & AI", "Deep Learning", "NLP & Computer Vision", "Gen AI Fundamentals", "Industry Projects"] },
+                                            { title: "Data Engineering", desc: "Build robust data pipelines, ETL & cloud infrastructure", duration: "6-8 months", price: "70,000", strike: "80,000", popular: false, img: "/images/data_engineering.jpg", features: ["SQL & NoSQL", "ETL Pipelines", "Cloud (AWS/Azure)", "Big Data Tools", "Real-time Processing"] },
+                                            { title: "AI / ML Engineering", desc: "Production ML systems, MLOps & model deployment", duration: "7-9 months", price: "90,000", strike: "1,00,000", popular: true, img: "/images/ai_ml_engineering.jpg", features: ["Advanced ML", "MLOps & Deployment", "Model Optimization", "Cloud ML Services", "End-to-end Projects"] }
                                         ].map((course, i) => (
                                             <div key={i} className="border-2 border-gray-200 rounded-2xl overflow-hidden hover:shadow-2xl hover:border-blue-500 transition-all duration-300 bg-white">
                                                 <div className="relative h-56 bg-gradient-to-br from-blue-50 to-indigo-50 overflow-hidden">
@@ -566,8 +566,8 @@ const Replica = () => {
                                         {[
                                             { t: "Python", time: "6–8 weeks", p: "15,000", img: "/images/python.jpg", features: ["Python Basics", "Data Structures", "OOP Concepts", "Libraries & Frameworks"] },
                                             { t: "SQL", time: "4–6 weeks", p: "10,000", img: "/images/sql.png", features: ["Database Fundamentals", "Queries & Joins", "Optimization", "Real-world Projects"] },
-                                            { t: "Power BI / Tableau", time: "5–6 weeks", p: "15,000", img: "/images/data visualization.jpg", features: ["Dashboard Creation", "Data Modeling", "DAX Functions", "Interactive Reports"] },
-                                            { t: "Machine Learning", time: "8–10 weeks", p: "20,000", img: "/images/machine learning.jpg", features: ["ML Algorithms", "Model Training", "Scikit-learn", "Hands-on Projects"] }
+                                            { t: "Power BI / Tableau", time: "5–6 weeks", p: "15,000", img: "/images/data_visualization.jpg", features: ["Dashboard Creation", "Data Modeling", "DAX Functions", "Interactive Reports"] },
+                                            { t: "Machine Learning", time: "8–10 weeks", p: "20,000", img: "/images/machine_learning.jpg", features: ["ML Algorithms", "Model Training", "Scikit-learn", "Hands-on Projects"] }
                                         ].map((m, i) => (
                                             <div key={i} className="border-2 border-gray-200 rounded-2xl p-6 text-center hover:shadow-xl hover:border-blue-500 transition-all bg-white">
                                                 <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 flex items-center justify-center p-3">
@@ -677,9 +677,9 @@ const Replica = () => {
                                             { t: "Data Analytics", d: "4–5 months", p: "40,000", s: "50,000", save: "10,000", img: "/images/data_analytics.jpeg", features: ["Python, SQL, Excel", "Power BI / Tableau", "Statistics & Analytics", "Real-world Projects", "Placement Support"] },
                                             { t: "Business Analytics", d: "4–5 months", p: "45,000", s: "55,000", save: "10,000", img: "/images/business_analytics.jpg", features: ["Excel & SQL", "Business Intelligence", "Data Visualization", "Case Studies", "Internship Certificate"] },
                                             { t: "Data Science", d: "5–7 months", p: "55,000", s: "65,000", save: "10,000", img: "/images/data_science.webp", features: ["Python & R", "Machine Learning", "Statistics", "Deep Learning Basics", "Capstone Project"] },
-                                            { t: "Data Science & AI", d: "6–9 months", p: "65,000", s: "75,000", save: "10,000", img: "/images/data science and ai.jpg", features: ["Advanced ML & AI", "Deep Learning", "NLP & Computer Vision", "Gen AI Fundamentals", "Industry Projects"] },
-                                            { t: "Data Engineering", d: "6–8 months", p: "70,000", s: "80,000", save: "10,000", img: "/images/data engineering.jpg", features: ["SQL & NoSQL", "ETL Pipelines", "Cloud (AWS/Azure)", "Big Data Tools", "Real-time Processing"] },
-                                            { t: "AI / ML Engineering", d: "7–9 months", p: "90,000", s: "1,00,000", save: "10,000", img: "/images/ai ml engineering.jpg", features: ["Advanced ML", "MLOps & Deployment", "Model Optimization", "Cloud ML Services", "End-to-end Projects"] },
+                                            { t: "Data Science & AI", d: "6–9 months", p: "65,000", s: "75,000", save: "10,000", img: "/images/data_science_and_ai.jpg", features: ["Advanced ML & AI", "Deep Learning", "NLP & Computer Vision", "Gen AI Fundamentals", "Industry Projects"] },
+                                            { t: "Data Engineering", d: "6–8 months", p: "70,000", s: "80,000", save: "10,000", img: "/images/data_engineering.jpg", features: ["SQL & NoSQL", "ETL Pipelines", "Cloud (AWS/Azure)", "Big Data Tools", "Real-time Processing"] },
+                                            { t: "AI / ML Engineering", d: "7–9 months", p: "90,000", s: "1,00,000", save: "10,000", img: "/images/ai_ml_engineering.jpg", features: ["Advanced ML", "MLOps & Deployment", "Model Optimization", "Cloud ML Services", "End-to-end Projects"] },
                                         ].map((item, i) => (
                                             <div key={i} className="border-2 border-gray-200 rounded-2xl overflow-hidden hover:shadow-2xl hover:border-blue-500 transition-all bg-white">
                                                 <div className="relative">
@@ -726,8 +726,8 @@ const Replica = () => {
                                         {[
                                             { t: "Python", time: "6–8 weeks", p: "15,000", img: "/images/python.jpg" },
                                             { t: "SQL", time: "4–6 weeks", p: "10,000", img: "/images/sql.png" },
-                                            { t: "Power BI / Tableau", time: "5–6 weeks", p: "15,000", img: "/images/data visualization.jpg" },
-                                            { t: "Machine Learning", time: "8–10 weeks", p: "20,000", img: "/images/machine learning.jpg" }
+                                            { t: "Power BI / Tableau", time: "5–6 weeks", p: "15,000", img: "/images/data_visualization.jpg" },
+                                            { t: "Machine Learning", time: "8–10 weeks", p: "20,000", img: "/images/machine_learning.jpg" }
                                         ].map((m, i) => (
                                             <div key={i} className="border-2 border-gray-200 rounded-2xl p-6 text-center hover:shadow-xl hover:border-blue-500 transition-all bg-white">
                                                 <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 flex items-center justify-center p-3">
@@ -875,7 +875,7 @@ const Replica = () => {
                                     <div className="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-3xl mx-auto text-center">
                                         {[
                                             { name: "Razorpay", img: "/images/razorpay.png" },
-                                            { name: "Swiggy", img: "/images/swiggy .png" },
+                                            { name: "Swiggy", img: "/images/swiggy.png" },
                                             { name: "Zomato", img: "/images/zomato.png" }
                                         ].map((c, i) => (
                                             <div key={i} className="border rounded-xl p-6 hover:shadow-md transition">
