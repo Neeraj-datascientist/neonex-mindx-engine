@@ -1,4 +1,5 @@
 import { BRAND_NAME } from "@/lib/brand";
+import db from "@/lib/db";
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import { z } from "zod";
@@ -92,6 +93,22 @@ export async function POST(req: Request) {
   }
 
   try {
+    // 1. Save to Database
+    try {
+      await db.enquiry.create({
+        data: {
+          name,
+          email,
+          phone,
+        },
+      });
+    } catch (dbErr) {
+      // We still try to send the email even if DB fails, 
+      // but we log it for the developer.
+      console.error("[send-enquiry] DB save failed", dbErr);
+    }
+
+    // 2. Send Email Notification
     await transport.sendMail({
       from: `"${fromName}" <${smtpUser}>`,
       to: toAddresses.join(", "),
