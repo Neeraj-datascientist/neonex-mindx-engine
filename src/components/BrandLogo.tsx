@@ -1,4 +1,5 @@
 import { BRAND_NAME } from "@/lib/brand";
+import Image from "next/image";
 
 export { BRAND_NAME };
 
@@ -7,7 +8,7 @@ type ImgProps = { className?: string };
 /** Navbar — horizontal wordmark; wider clamp reads more “banner” than square. */
 export function NavLogo({ className = "" }: ImgProps) {
   return (
-    <img
+    <Image
       src="/images/main-logo.png"
       alt={BRAND_NAME}
       className={`h-auto w-[clamp(7rem,22vw,9.5rem)] max-w-[152px] object-contain object-left md:max-w-[160px] mix-blend-multiply transform-gpu ${className}`}
@@ -20,7 +21,7 @@ export function NavLogo({ className = "" }: ImgProps) {
 /** Footer — wordmark only (use inside FooterBrandBlock for layout). */
 export function FooterLogo({ className = "" }: ImgProps) {
   return (
-    <img
+    <Image
       src="/images/main-logo.png"
       alt={BRAND_NAME}
       className={`h-auto w-full max-w-[200px] object-contain object-left sm:max-w-[220px] invert brightness-200 mix-blend-screen scale-125 transform-gpu ${className}`}
@@ -43,9 +44,11 @@ export function FooterBrandBlock({ className = "" }: { className?: string }) {
 
 export function LogoWordmark({ className = "" }: ImgProps) {
   return (
-    <img
+    <Image
       src="/images/main-logo.png"
       alt={BRAND_NAME}
+      width={160}
+      height={48}
       className={`w-auto max-w-full object-contain object-left ${className}`}
     />
   );
@@ -76,7 +79,7 @@ export function HeroLogoMarkGlow({ className = "" }: { className?: string }) {
         className="hero-brand-stage relative z-[1] mx-auto flex w-full min-h-[168px] items-center justify-center rounded-[1.75rem] border border-white/15 bg-gradient-to-br from-white/[0.06] via-blue-950/10 to-indigo-950/15 px-4 py-5 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.12)] sm:min-h-[188px] sm:rounded-[2rem] sm:px-6 sm:py-6 md:aspect-[2.25/1] md:min-h-[200px] md:max-h-[300px] md:px-8 md:py-5 lg:aspect-[2.45/1] lg:min-h-[220px] lg:max-h-[min(32vw,320px)]"
       >
         {/* mix-blend-multiply: knocks out opaque white in logo-mark.png so it reads on glass/blue (no pasted square). */}
-        <img
+        <Image
           src="/images/logo-mark.png"
           alt=""
           width={450}
@@ -94,7 +97,7 @@ export function CtaBrandAccent({ className = "" }: { className?: string }) {
     <div className={`mx-auto flex w-full max-w-lg flex-col items-stretch gap-4 md:max-w-xl ${className}`}>
       <div className="h-px w-full bg-gradient-to-r from-transparent via-blue-400/55 to-transparent" />
       <div className="flex w-full items-center gap-4 rounded-2xl border border-white/12 bg-gradient-to-r from-white/[0.09] via-white/[0.05] to-white/[0.02] px-6 py-3.5 backdrop-blur-sm sm:px-8 sm:py-4">
-        <img
+        <Image
           src="/images/logo-mark.png"
           alt=""
           width={36}

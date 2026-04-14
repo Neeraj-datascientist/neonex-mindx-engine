@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type PageHeroProps = {
   eyebrow: string;
   title: string;
@@ -33,7 +35,7 @@ export function PageHero({ eyebrow, title, description, variant = "blue" }: Page
           <div
             className={`flex w-full max-w-md shrink-0 items-center gap-4 rounded-2xl px-5 py-3.5 shadow-sm ring-1 md:max-w-lg ${variantRing[variant]}`}
           >
-            <img
+            <Image
               src="/images/logo-mark.png"
               alt=""
               className="h-10 w-10 shrink-0 object-contain sm:h-11 sm:w-11"

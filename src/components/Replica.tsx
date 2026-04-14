@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { BrandBackdrop } from "@/components/BrandBackdrop";
 import BookDemoButton from "@/components/BookDemoButton";
 import {
@@ -326,7 +327,7 @@ const Replica = () => {
                                     </div>
                                     <div className="mt-14">
                                         <p className="text-yellow-300 font-medium mb-4">
-                                            Don’t get left behind. Start your transformation today.
+                                            Don&apos;t get left behind. Start your transformation today.
                                         </p>
                                         <BookDemoButton trigger={
                                             <button className="px-8 py-3 bg-white text-red-800 font-semibold rounded-lg shadow hover:bg-gray-100 transition">
@@ -374,7 +375,13 @@ const Replica = () => {
                                         ].map((item, idx) => (
                                             <div key={idx} className="border bg-white rounded-xl p-6 hover:shadow-xl hover:ring-1 hover:ring-blue-100 transition transform hover:-translate-y-1">
                                                 <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-4 p-2.5">
-                                                    <img src={item.icon} alt="" className="w-full h-full object-contain" />
+                                                    <Image
+                                                        src={item.icon}
+                                                        alt=""
+                                                        width={32}
+                                                        height={32}
+                                                        className="w-full h-full object-contain"
+                                                    />
                                                 </div>
                                                 <h3 className="font-semibold mb-2">{item.title}</h3>
                                                 <p className="text-sm text-gray-500">{item.desc}</p>
@@ -396,9 +403,11 @@ const Replica = () => {
                                         {/* Trainer 1 */}
                                         <div className="text-center group hover:-translate-y-2 transition-transform duration-300">
                                             <div className="w-32 h-32 mx-auto bg-gray-200 rounded-full mb-4 overflow-hidden border-4 border-white shadow-lg relative ring-2 ring-blue-100">
-                                                <img
+                                                <Image
                                                     src="/images/neeraj.png"
                                                     alt="Neeraj PC"
+                                                    width={128}
+                                                    height={128}
                                                     className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
                                                 />
                                             </div>
@@ -410,9 +419,11 @@ const Replica = () => {
                                         {/* Trainer 2 */}
                                         <div className="text-center group hover:-translate-y-2 transition-transform duration-300">
                                             <div className="w-32 h-32 mx-auto bg-gray-200 rounded-full mb-4 overflow-hidden border-4 border-white shadow-lg relative ring-2 ring-blue-100">
-                                                <img
-                                                    src="/images/lakshmi.png"
+                                                <Image
+                                                    src="/images/trainer_lakshmi.png"
                                                     alt="Lakshmi Achar"
+                                                    width={128}
+                                                    height={128}
                                                     className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
                                                 />
                                             </div>
@@ -424,9 +435,11 @@ const Replica = () => {
                                         {/* Trainer 3 */}
                                         <div className="text-center group hover:-translate-y-2 transition-transform duration-300">
                                             <div className="w-32 h-32 mx-auto bg-gray-200 rounded-full mb-4 overflow-hidden border-4 border-white shadow-lg relative ring-2 ring-blue-100">
-                                                <img
+                                                <Image
                                                     src="/images/megha.png"
                                                     alt="Megha"
+                                                    width={128}
+                                                    height={128}
                                                     className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
                                                 />
                                             </div>
@@ -443,7 +456,7 @@ const Replica = () => {
                                 <div className="max-w-6xl mx-auto px-6 py-24">
                                     <div className="text-center mb-14">
                                         <h2 className="text-3xl md:text-4xl font-bold mb-2">FAQ</h2>
-                                        <p className="text-gray-600">Got questions? We've got answers</p>
+                                        <p className="text-gray-600">Got questions? We&apos;ve got answers</p>
                                     </div>
                                     <div className="space-y-4">
                                         {[
@@ -521,7 +534,13 @@ const Replica = () => {
                                         ].map((course, i) => (
                                             <div key={i} className="border-2 border-gray-200 rounded-2xl overflow-hidden hover:shadow-2xl hover:border-blue-500 transition-all duration-300 bg-white">
                                                 <div className="relative h-56 bg-gradient-to-br from-blue-50 to-indigo-50 overflow-hidden">
-                                                    <img src={course.img} alt={course.title} className="w-full h-full object-cover" />
+                                                    <Image
+                                                        src={course.img}
+                                                        alt={course.title}
+                                                        width={600}
+                                                        height={400}
+                                                        className="w-full h-full object-cover"
+                                                    />
                                                     {course.popular && (
                                                         <span className="absolute top-4 right-4 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">POPULAR</span>
                                                     )}
@@ -571,7 +590,13 @@ const Replica = () => {
                                         ].map((m, i) => (
                                             <div key={i} className="border-2 border-gray-200 rounded-2xl p-6 text-center hover:shadow-xl hover:border-blue-500 transition-all bg-white">
                                                 <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 flex items-center justify-center p-3">
-                                                    <img src={m.img} alt={m.t} className="w-full h-full object-contain" />
+                                                    <Image
+                                                        src={m.img}
+                                                        alt={m.t}
+                                                        width={80}
+                                                        height={80}
+                                                        className="w-full h-full object-contain"
+                                                    />
                                                 </div>
                                                 <h3 className="font-bold text-xl mb-2">{m.t}</h3>
                                                 <p className="text-sm text-gray-500 mb-4">{m.time}</p>
@@ -731,7 +756,13 @@ const Replica = () => {
                                         ].map((m, i) => (
                                             <div key={i} className="border-2 border-gray-200 rounded-2xl p-6 text-center hover:shadow-xl hover:border-blue-500 transition-all bg-white">
                                                 <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 flex items-center justify-center p-3">
-                                                    <img src={m.img} alt={m.t} className="w-full h-full object-contain" />
+                                                    <Image
+                                                        src={m.img}
+                                                        alt={m.t}
+                                                        width={80}
+                                                        height={80}
+                                                        className="w-full h-full object-contain"
+                                                    />
                                                 </div>
                                                 <h3 className="font-bold text-xl mb-2">{m.t}</h3>
                                                 <p className="text-sm text-gray-500 mb-4">{m.time}</p>
@@ -826,15 +857,21 @@ const Replica = () => {
                                     </div>
                                     <div className="grid md:grid-cols-3 gap-8">
                                         {[
-                                            { n: "Ananya Reddy", r: "Data Analyst", c: "Accenture", q: `${BRAND_NAME} transformed my career completely. Coming from a non-technical background, I gained confidence through hands-on projects and industry-focused training. The placement support was exceptional!`, img: "/images/alumni_ananya.png" },
-                                            { n: "Vikram Singh", r: "ML Engineer", c: "Swiggy", q: "The AI/ML Engineering program was extremely comprehensive. The projects and mentorship prepared me well for industry-level challenges. I landed my dream job within 2 months of completing the course.", img: "/images/alumni_vikram.png" },
-                                            { n: "Meera Krishnan", r: "Data Engineer", c: "Zomato", q: `Switching from manual testing to data engineering felt risky, but ${BRAND_NAME} made the transition smooth with structured learning and real-time projects. Best decision of my career!`, img: "/images/alumni_meera.png" },
-                                            { n: "Rohit Sharma", r: "Business Analyst", c: "Nykaa", q: "As someone from a commerce background, I was nervous about transitioning to analytics. The structured approach and constant support helped me confidently move into the field. Highly recommended!", img: "/images/alumni_rohit.png" }
+                                            { n: "Ananya Reddy", r: "Data Analyst", c: "Accenture", q: `${BRAND_NAME} transformed my career completely. Coming from a non-technical background, I gained confidence through hands-on projects and industry-focused training. The placement support was exceptional!`, img: "/images/Ananya_Iyer.webp" },
+                                            { n: "Vikram Singh", r: "ML Engineer", c: "Swiggy", q: "The AI/ML Engineering program was extremely comprehensive. The projects and mentorship prepared me well for industry-level challenges. I landed my dream job within 2 months of completing the course.", img: "/images/Vikram_Singh.jpg" },
+                                            { n: "Meera Krishnan", r: "Data Engineer", c: "Zomato", q: `Switching from manual testing to data engineering felt risky, but ${BRAND_NAME} made the transition smooth with structured learning and real-time projects. Best decision of my career!`, img: "/images/Meera_Krishnan.webp" },
+                                            { n: "Rohit Sharma", r: "Business Analyst", c: "Nykaa", q: "As someone from a commerce background, I was nervous about transitioning to analytics. The structured approach and constant support helped me confidently move into the field. Highly recommended!", img: "/images/Rohit_Sharma.jpg" }
                                         ].map((t, i) => (
                                             <div key={i} className={`border-2 border-gray-200 rounded-2xl p-6 bg-white hover:shadow-xl transition-all ${i === 3 ? "md:col-span-3 lg:col-span-1" : ""}`}>
                                                 <div className="flex items-center gap-4 mb-4">
                                                     <div className="w-16 h-16 rounded-full bg-gray-200 overflow-hidden flex-shrink-0">
-                                                        <img src={t.img} alt={t.n} className="w-full h-full object-cover" />
+                                                        <Image
+                                                            src={t.img}
+                                                            alt={t.n}
+                                                            width={64}
+                                                            height={64}
+                                                            className="w-full h-full object-cover"
+                                                        />
                                                     </div>
                                                     <div>
                                                         <h4 className="font-bold text-lg">{t.n}</h4>
@@ -843,7 +880,7 @@ const Replica = () => {
                                                     </div>
                                                 </div>
                                                 <div className="text-yellow-400 mb-3 text-lg">★★★★★</div>
-                                                <p className="text-sm text-gray-700 leading-relaxed mb-4">"{t.q}"</p>
+                                                <p className="text-sm text-gray-700 leading-relaxed mb-4">&quot;{t.q}&quot;</p>
                                                 <button className="text-blue-600 text-sm font-medium hover:underline">Read More →</button>
                                             </div>
                                         ))}
@@ -880,7 +917,13 @@ const Replica = () => {
                                         ].map((c, i) => (
                                             <div key={i} className="border rounded-xl p-6 hover:shadow-md transition">
                                                 <div className="w-20 h-12 mx-auto mb-3 flex items-center justify-center">
-                                                    <img src={c.img} alt={c.name} className="max-w-full max-h-full object-contain" />
+                                                    <Image
+                                                        src={c.img}
+                                                        alt={c.name}
+                                                        width={80}
+                                                        height={48}
+                                                        className="max-w-full max-h-full object-contain"
+                                                    />
                                                 </div>
                                                 <p className="text-sm font-medium">{c.name}</p>
                                             </div>
@@ -906,7 +949,13 @@ const Replica = () => {
                                         ].map((art, i) => (
                                             <div key={i} className="border rounded-xl overflow-hidden hover:shadow-md transition cursor-pointer group">
                                                 <div className="h-44 bg-gray-200 overflow-hidden">
-                                                    <img src={art.img} alt={art.t} className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+                                                    <Image
+                                                        src={art.img}
+                                                        alt={art.t}
+                                                        width={400}
+                                                        height={250}
+                                                        className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                                                    />
                                                 </div>
                                                 <div className="p-5">
                                                     <p className="text-xs text-blue-600 mb-2">{art.cat}</p>
@@ -925,7 +974,7 @@ const Replica = () => {
                                     <CtaBrandAccent className="mb-10" />
                                     <div className="text-4xl mb-4">🏆</div>
                                     <h2 className="text-3xl md:text-4xl font-bold mb-4">Be Our Next Success Story</h2>
-                                    <p className="text-blue-100 max-w-2xl mx-auto mb-10">Your career transformation is just one decision away. Let’s make it happen together.</p>
+                                    <p className="text-blue-100 max-w-2xl mx-auto mb-10">Your career transformation is just one decision away. Let&apos;s make it happen together.</p>
                                     <BookDemoButton trigger={
                                         <button className="px-8 py-3 bg-blue-600 rounded-lg font-semibold hover:bg-blue-500 transition">Get Started Today</button>
                                     } />
