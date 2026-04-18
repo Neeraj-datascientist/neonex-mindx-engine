@@ -203,17 +203,19 @@ const Replica = () => {
                                             <HeroLogoMarkGlow />
                                         </div>
                                         <div className="w-full max-w-xl flex-1 text-center lg:max-w-[26rem] lg:text-left xl:max-w-lg">
-                                            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.28em] text-blue-200/90">
-                                                Data · AI · Innovation
+                                            <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-400/30 bg-blue-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.22em] text-blue-200/90 backdrop-blur-sm">
+                                                <span className="h-1.5 w-1.5 rounded-full bg-blue-400 animate-pulse" />
+                                                Learn Today, Lead Tomorrow
                                             </p>
                                             <h1 className="text-balance text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-[2.75rem] lg:leading-[1.15] xl:text-5xl">
-                                                Empowering Intelligence with{" "}
+                                                India&apos;s Premier{" "}
                                                 <span className="bg-gradient-to-r from-blue-200 via-white to-indigo-200 bg-clip-text text-transparent">
-                                                    {BRAND_NAME}
-                                                </span>
+                                                    Data Science &amp; AI
+                                                </span>{" "}
+                                                Training Institute
                                             </h1>
                                             <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-slate-300 md:text-lg lg:mx-0">
-                                                Build expertise in artificial intelligence, data science, and modern analytics — with live mentorship, real projects, and outcomes that scale with your ambition.
+                                                Build expertise in artificial intelligence, data science, and modern analytics — with live mentorship, real projects, and 100% placement assistance.
                                             </p>
                                             <div className="mt-10 flex flex-col items-stretch justify-center gap-4 sm:flex-row sm:justify-center lg:justify-start lg:gap-5">
                                                 <button
@@ -487,6 +489,7 @@ const Replica = () => {
                             <section className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white">
                                 <div className="max-w-7xl mx-auto px-6 py-20 text-center">
                                     <CtaBrandAccent className="mb-10" />
+                                    <p className="text-sm font-medium text-blue-300 tracking-widest uppercase mb-4">Learn Today, Lead Tomorrow</p>
                                     <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Career?</h2>
                                     <p className="text-blue-100 max-w-2xl mx-auto mb-8">Join 1000+ learners who have accelerated their careers with {BRAND_NAME}.</p>
                                     <div className="flex justify-center gap-4 flex-wrap">
@@ -806,6 +809,7 @@ const Replica = () => {
                             <section className="bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800 text-white">
                                 <div className="max-w-7xl mx-auto px-6 py-28 sm:py-32 text-center">
                                     <CtaBrandAccent className="mb-10" />
+                                    <p className="text-sm font-medium text-blue-300 tracking-widest uppercase mb-4">Learn Today, Lead Tomorrow</p>
                                     <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Invest in Your Future?</h2>
                                     <p className="text-blue-100 max-w-2xl mx-auto mb-10">Don’t let budget be a barrier. We offer flexible EMI options and special discounts.</p>
                                     <div className="flex justify-center gap-6">
@@ -995,6 +999,7 @@ const Replica = () => {
                             <section className="bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800 text-white">
                                 <div className="max-w-7xl mx-auto px-6 py-28 sm:py-32 text-center">
                                     <CtaBrandAccent className="mb-10" />
+                                    <p className="text-sm font-medium text-blue-300 tracking-widest uppercase mb-4">Learn Today, Lead Tomorrow</p>
                                     <div className="text-4xl mb-4">🏆</div>
                                     <h2 className="text-3xl md:text-4xl font-bold mb-4">Be Our Next Success Story</h2>
                                     <p className="text-blue-100 max-w-2xl mx-auto mb-10">Your career transformation is just one decision away. Let&apos;s make it happen together.</p>
