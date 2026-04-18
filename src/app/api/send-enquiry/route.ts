@@ -85,8 +85,7 @@ export async function POST(req: Request) {
       {
         success: false,
         smtpFailed: true,
-        message:
-          "Primary email (SMTP) is not configured. The app will try Web3Forms in your browser if configured.",
+        message: "Email SMTP is not configured. Please check environment variables.",
       },
       { status: 502 },
     );
@@ -103,8 +102,6 @@ export async function POST(req: Request) {
         },
       });
     } catch (dbErr) {
-      // We still try to send the email even if DB fails, 
-      // but we log it for the developer.
       console.error("[send-enquiry] DB save failed", dbErr);
     }
 
@@ -125,7 +122,7 @@ export async function POST(req: Request) {
       {
         success: false,
         smtpFailed: true,
-        message: "Primary email (SMTP) could not be sent. The app will try Web3Forms in your browser if configured.",
+        message: "Failed to send email via SMTP. Please try again later.",
       },
       { status: 502 },
     );
