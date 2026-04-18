@@ -14,8 +14,8 @@ const siteUrl = "https://neonexminds.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: `${BRAND_NAME} | Learn Today, Lead Tomorrow | Best Data Science & AI Training in India`,
-  description: `${BRAND_NAME} — Learn Today, Lead Tomorrow. India's premier Data Science, AI/ML, and Business Analytics training institute. Master Python, SQL, Machine Learning, Deep Learning with hands-on projects. 100% job assistance, industry mentors, and internship included. Join 1000+ successful alumni.`,
+  title: `${BRAND_NAME} | Best Data Science & AI Training Institute in India | 100% Placement`,
+  description: `Transform your career with ${BRAND_NAME} — India's leading Data Science, AI/ML, and Business Analytics training institute. Learn Python, SQL, Machine Learning, Deep Learning with hands-on projects. 100% job assistance, industry mentors, and internship included. Join 1000+ successful alumni.`,
   keywords: [
     "data science course",
     "AI ML training",
@@ -52,8 +52,8 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "https://neonexminds.com",
     siteName: BRAND_NAME,
-    title: `${BRAND_NAME} | Learn Today, Lead Tomorrow | Data Science & AI Training`,
-    description: `${BRAND_NAME} — India's premier Data Science, AI/ML, and Analytics training institute. Hands-on projects, internship, 100% placement assistance.`,
+    title: `${BRAND_NAME} | Best Data Science & AI Training Institute | 100% Placement`,
+    description: "Transform your career with industry-led Data Science, AI/ML, and Analytics training. Hands-on projects, internship, and placement support included.",
     images: [
       {
         url: "/images/logo-social.png",
@@ -65,8 +65,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${BRAND_NAME} | Learn Today, Lead Tomorrow | Data Science & AI`,
-    description: `${BRAND_NAME} — Master Data Science, AI/ML & Analytics with hands-on training and 100% placement support. Start from basics — non-tech friendly.`,
+    title: `${BRAND_NAME} | Data Science & AI Training | 100% Placement`,
+    description: "Master Data Science, AI/ML & Analytics with hands-on training and 100% placement support. Start from basics – non-tech friendly.",
     images: ["/images/logo-social.png"],
   },
   verification: {

@@ -4,59 +4,58 @@ type PageHeroProps = {
   eyebrow: string;
   title: string;
   description?: string;
+  /** Slightly different tint per route */
   variant?: "blue" | "emerald" | "amber";
 };
 
-const variantStyle: Record<NonNullable<PageHeroProps["variant"]>, { bg: string; dot: string; glow: string }> = {
-  blue: { bg: "from-blue-600/10 to-transparent", dot: "bg-blue-600", glow: "bg-blue-500/10" },
-  emerald: { bg: "from-emerald-600/10 to-transparent", dot: "bg-emerald-600", glow: "bg-emerald-500/10" },
-  amber: { bg: "from-amber-600/10 to-transparent", dot: "bg-amber-600", glow: "bg-amber-500/10" },
+const variantRing: Record<NonNullable<PageHeroProps["variant"]>, string> = {
+  blue: "bg-blue-600/10 ring-blue-600/15",
+  emerald: "bg-blue-600/10 ring-blue-600/15",
+  amber: "bg-blue-600/10 ring-blue-600/15",
 };
 
 /**
- * Enterprise-Grade Page Hero
- * Designed for high-authority sub-pages (Courses, Fees, Alumni).
- * Uses deep layered backgrounds and premium topography.
+ * Inner-route hero: one restrained mark + typography — no oversized wordmark boxes.
  */
 export function PageHero({ eyebrow, title, description, variant = "blue" }: PageHeroProps) {
-  const style = variantStyle[variant];
   return (
-    <section className="relative overflow-hidden border-b border-slate-200 bg-white">
-      {/* Premium Background Layering */}
-      <div className={`absolute inset-0 bg-gradient-to-br ${style.bg}`} />
-      <div className={`absolute -right-20 -top-20 h-96 w-96 rounded-full ${style.glow} blur-3xl opacity-50`} />
-      
-      {/* Geometric Decorative Elements */}
-      <div className="absolute left-0 top-0 h-full w-px bg-gradient-to-b from-blue-500/20 via-transparent to-transparent" />
-      <div className="absolute right-[5%] top-1/2 h-[300px] w-[300px] -translate-y-1/2 rounded-full border border-slate-900/[0.03]" />
-
-      <div className="relative mx-auto max-w-7xl px-6 py-20 lg:py-24">
-        <div className="flex flex-col gap-6">
-          {/* Status Badge */}
-          <div className="flex items-center gap-3">
-            <div className={`h-1.5 w-1.5 rounded-full ${style.dot} animate-pulse`} />
-            <span className="text-[0.65rem] font-black uppercase tracking-[0.3em] text-slate-500">
-              {eyebrow}
-            </span>
+    <section className="relative overflow-hidden border-b border-slate-200/80 bg-gradient-to-br from-slate-50 via-white to-blue-50/50">
+      <div
+        className="pointer-events-none absolute -bottom-24 -right-12 h-[min(70vw,380px)] w-[min(70vw,380px)] opacity-[0.035] md:h-[420px] md:w-[420px]"
+        style={{
+          backgroundImage: "url(/images/logo-plain.png)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "bottom right",
+        }}
+        aria-hidden
+      />
+      <div className="relative mx-auto max-w-7xl px-6 py-14 md:py-16">
+        <div className="flex flex-col gap-6 md:flex-row md:items-start md:gap-10">
+          <div
+            className={`flex w-full max-w-md shrink-0 items-center gap-4 rounded-2xl px-5 py-3.5 shadow-sm ring-1 md:max-w-lg ${variantRing[variant]}`}
+          >
+            <Image
+              src="/images/logo-plain.png"
+              alt=""
+              className="h-10 w-10 shrink-0 object-contain sm:h-11 sm:w-11 mix-blend-multiply"
+              width={44}
+              height={44}
+            />
+            <div className="h-px min-w-0 flex-1 bg-gradient-to-r from-blue-600/30 to-transparent" aria-hidden />
           </div>
-
-          <div className="max-w-4xl">
-            <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-5xl">
+          <div className="min-w-0 flex-1">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-600">
+              {eyebrow}
+            </p>
+            <h1 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 md:text-4xl lg:text-[2.5rem] lg:leading-tight">
               {title}
             </h1>
-            {description && (
-              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600">
+            {description ? (
+              <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-600 md:text-lg">
                 {description}
               </p>
-            )}
-          </div>
-
-          {/* Learn Today tagline integrated as an underline accent */}
-          <div className="mt-4 flex items-center gap-4">
-            <div className="h-0.5 w-12 bg-blue-600" />
-            <p className="text-[0.65rem] font-bold uppercase tracking-[0.15em] text-blue-600/80">
-              Learn Today, Lead Tomorrow
-            </p>
+            ) : null}
           </div>
         </div>
       </div>
