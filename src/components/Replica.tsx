@@ -366,12 +366,12 @@ const Replica = () => {
                                     </div>
                                     <div className="grid md:grid-cols-3 gap-8">
                                         {[
-                                            { icon: "/images/logo-mark.png", title: "Hands-on Learning", desc: "Live classes, assignments, and real datasets." },
-                                            { icon: "/images/logo-mark.png", title: "Latest Curriculum", desc: "Content aligned with current industry needs." },
-                                            { icon: "/images/logo-mark.png", title: "100% Job Assistance", desc: "Dedicated PAT team for placements & referrals." },
-                                            { icon: "/images/logo-mark.png", title: "Real-Time Projects", desc: "Capstone projects based on real business use cases." },
-                                            { icon: "/images/logo-mark.png", title: "Industry Mentors", desc: "Learn directly from working professionals." },
-                                            { icon: "/images/logo-mark.png", title: "Internship Experience", desc: "3–6 month internship with certification." },
+                                            { icon: "/images/highlights/hands_on.png", title: "Hands-on Learning", desc: "Live classes, assignments, and real datasets." },
+                                            { icon: "/images/highlights/curriculum.png", title: "Latest Curriculum", desc: "Content aligned with current industry needs." },
+                                            { icon: "/images/highlights/job_assistance.png", title: "100% Job Assistance", desc: "Dedicated PAT team for placements & referrals." },
+                                            { icon: "/images/highlights/projects.png", title: "Real-Time Projects", desc: "Capstone projects based on real business use cases." },
+                                            { icon: "/images/highlights/mentors.png", title: "Industry Mentors", desc: "Learn directly from working professionals." },
+                                            { icon: "/images/highlights/internship.png", title: "Internship Experience", desc: "3–6 month internship with certification." },
                                         ].map((item, idx) => (
                                             <div key={idx} className="border bg-white rounded-xl p-6 hover:shadow-xl hover:ring-1 hover:ring-blue-100 transition transform hover:-translate-y-1">
                                                 <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-4 p-2.5">
@@ -420,7 +420,7 @@ const Replica = () => {
                                         <div className="text-center group hover:-translate-y-2 transition-transform duration-300">
                                             <div className="w-32 h-32 mx-auto bg-gray-200 rounded-full mb-4 overflow-hidden border-4 border-white shadow-lg relative ring-2 ring-blue-100">
                                                 <Image
-                                                    src="/images/trainer_lakshmi.png"
+                                                    src="/images/lakshmi.png"
                                                     alt="Lakshmi Achar"
                                                     width={128}
                                                     height={128}
@@ -857,30 +857,53 @@ const Replica = () => {
                                     </div>
                                     <div className="grid md:grid-cols-3 gap-8">
                                         {[
-                                            { n: "Ananya Reddy", r: "Data Analyst", c: "Accenture", q: `${BRAND_NAME} transformed my career completely. Coming from a non-technical background, I gained confidence through hands-on projects and industry-focused training. The placement support was exceptional!`, img: "/images/Ananya_Iyer.webp" },
-                                            { n: "Vikram Singh", r: "ML Engineer", c: "Swiggy", q: "The AI/ML Engineering program was extremely comprehensive. The projects and mentorship prepared me well for industry-level challenges. I landed my dream job within 2 months of completing the course.", img: "/images/Vikram_Singh.jpg" },
-                                            { n: "Meera Krishnan", r: "Data Engineer", c: "Zomato", q: `Switching from manual testing to data engineering felt risky, but ${BRAND_NAME} made the transition smooth with structured learning and real-time projects. Best decision of my career!`, img: "/images/Meera_Krishnan.webp" },
-                                            { n: "Rohit Sharma", r: "Business Analyst", c: "Nykaa", q: "As someone from a commerce background, I was nervous about transitioning to analytics. The structured approach and constant support helped me confidently move into the field. Highly recommended!", img: "/images/Rohit_Sharma.jpg" }
+                                            {
+                                                name: "Ananya Reddy",
+                                                role: "Data Analyst",
+                                                company: "Accenture",
+                                                image: "https://images.unsplash.com/photo-1623184122025-203b26373d09?q=80&w=2681&auto=format&fit=crop",
+                                                quote: "\"NeoNex MindX transformed my career completely. Coming from a non-technical background, I gained confidence through hands-on projects and industry-focused training. The placement support was exceptional!\"",
+                                            },
+                                            {
+                                                name: "Vikram Singh",
+                                                role: "ML Engineer",
+                                                company: "Swiggy",
+                                                image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2574&auto=format&fit=crop",
+                                                quote: "\"The AI/ML Engineering program was extremely comprehensive. The projects and mentorship prepared me well for industry-level challenges. I landed my dream job within 2 months of completing the course.\"",
+                                            },
+                                            {
+                                                name: "Meera Krishnan",
+                                                role: "Data Engineer",
+                                                company: "Zomato",
+                                                image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=2561&auto=format&fit=crop",
+                                                quote: "\"Switching from manual testing to data engineering felt risky, but NeoNex MindX made the transition smooth with structured learning and real-time projects. Best decision of my career!\"",
+                                            },
+                                            {
+                                                name: "Rohit Sharma",
+                                                role: "Business Analyst",
+                                                company: "Nykaa",
+                                                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2574&auto=format&fit=crop",
+                                                quote: "\"As someone from a commerce background, I was nervous about transitioning to analytics. The structured approach and constant support helped me confidently move into the field. Highly recommended!\"",
+                                            }
                                         ].map((t, i) => (
                                             <div key={i} className={`border-2 border-gray-200 rounded-2xl p-6 bg-white hover:shadow-xl transition-all ${i === 3 ? "md:col-span-3 lg:col-span-1" : ""}`}>
                                                 <div className="flex items-center gap-4 mb-4">
                                                     <div className="w-16 h-16 rounded-full bg-gray-200 overflow-hidden flex-shrink-0">
                                                         <Image
-                                                            src={t.img}
-                                                            alt={t.n}
+                                                            src={t.image}
+                                                            alt={t.name}
                                                             width={64}
                                                             height={64}
                                                             className="w-full h-full object-cover"
                                                         />
                                                     </div>
                                                     <div>
-                                                        <h4 className="font-bold text-lg">{t.n}</h4>
-                                                        <p className="text-sm text-gray-600">{t.r}</p>
-                                                        <p className="text-xs text-gray-500">{t.c}</p>
+                                                        <h4 className="font-bold text-gray-900">{t.name}</h4>
+                                                        <p className="text-sm text-gray-500">{t.role} · {t.company}</p>
                                                     </div>
                                                 </div>
                                                 <div className="text-yellow-400 mb-3 text-lg">★★★★★</div>
-                                                <p className="text-sm text-gray-700 leading-relaxed mb-4">&quot;{t.q}&quot;</p>
+                                                <p className="text-sm text-gray-700 leading-relaxed mb-4">&quot;{t.quote}&quot;</p>
                                                 <button className="text-blue-600 text-sm font-medium hover:underline">Read More →</button>
                                             </div>
                                         ))}

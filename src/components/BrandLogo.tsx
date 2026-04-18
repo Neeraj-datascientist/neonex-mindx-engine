@@ -80,11 +80,11 @@ export function HeroLogoMarkGlow({ className = "" }: { className?: string }) {
       >
         {/* mix-blend-multiply: knocks out opaque white in logo-mark.png so it reads on glass/blue (no pasted square). */}
         <Image
-          src="/images/logo-mark.png"
+          src="/images/logo-plain.png"
           alt=""
           width={450}
           height={450}
-          className="hero-brand-drop animate-brand-float mx-auto h-auto w-full max-h-[min(46vw,240px)] max-w-[min(96%,36rem)] object-contain mix-blend-multiply sm:max-h-[min(40vw,260px)] md:max-h-[min(34vw,288px)] md:max-w-[min(98%,40rem)] lg:max-h-[min(30vw,300px)]"
+          className="hero-brand-drop animate-brand-float mx-auto h-auto w-full max-h-[min(46vw,240px)] max-w-[min(96%,36rem)] object-contain mix-blend-screen invert brightness-200 sm:max-h-[min(40vw,260px)] md:max-h-[min(34vw,288px)] md:max-w-[min(98%,40rem)] lg:max-h-[min(30vw,300px)]"
         />
       </div>
     </div>
@@ -98,11 +98,11 @@ export function CtaBrandAccent({ className = "" }: { className?: string }) {
       <div className="h-px w-full bg-gradient-to-r from-transparent via-blue-400/55 to-transparent" />
       <div className="flex w-full items-center gap-4 rounded-2xl border border-white/12 bg-gradient-to-r from-white/[0.09] via-white/[0.05] to-white/[0.02] px-6 py-3.5 backdrop-blur-sm sm:px-8 sm:py-4">
         <Image
-          src="/images/logo-mark.png"
+          src="/images/logo-plain.png"
           alt=""
           width={36}
           height={36}
-          className={`h-9 w-9 shrink-0 object-contain opacity-[0.85] invert mix-blend-screen scale-150 transform-gpu ${className}`}
+          className={`h-9 w-9 shrink-0 object-contain opacity-[0.85] invert brightness-200 mix-blend-screen scale-150 transform-gpu ${className}`}
           aria-hidden
         />
         <div className="h-px min-w-0 flex-1 bg-gradient-to-r from-blue-400/35 to-transparent" aria-hidden />

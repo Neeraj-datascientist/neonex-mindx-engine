@@ -16,7 +16,7 @@ export function BrandBackdrop({ className = "" }: { className?: string }) {
       <div
         className="absolute -right-4 top-1/2 h-[min(55vw,380px)] w-[min(95vw,640px)] max-w-[640px] -translate-y-1/2 opacity-[0.045] md:right-[4%]"
         style={{
-          backgroundImage: "url(/images/logo-mark.png)",
+          backgroundImage: "url(/images/logo-plain.png)",
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center right",

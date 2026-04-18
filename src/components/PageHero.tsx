@@ -23,7 +23,7 @@ export function PageHero({ eyebrow, title, description, variant = "blue" }: Page
       <div
         className="pointer-events-none absolute -bottom-24 -right-12 h-[min(70vw,380px)] w-[min(70vw,380px)] opacity-[0.035] md:h-[420px] md:w-[420px]"
         style={{
-          backgroundImage: "url(/images/logo-mark.png)",
+          backgroundImage: "url(/images/logo-plain.png)",
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "bottom right",
@@ -36,9 +36,9 @@ export function PageHero({ eyebrow, title, description, variant = "blue" }: Page
             className={`flex w-full max-w-md shrink-0 items-center gap-4 rounded-2xl px-5 py-3.5 shadow-sm ring-1 md:max-w-lg ${variantRing[variant]}`}
           >
             <Image
-              src="/images/logo-mark.png"
+              src="/images/logo-plain.png"
               alt=""
-              className="h-10 w-10 shrink-0 object-contain sm:h-11 sm:w-11"
+              className="h-10 w-10 shrink-0 object-contain sm:h-11 sm:w-11 mix-blend-multiply"
               width={44}
               height={44}
             />
