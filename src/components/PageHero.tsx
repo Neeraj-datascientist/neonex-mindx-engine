@@ -7,45 +7,56 @@ type PageHeroProps = {
   variant?: "blue" | "emerald" | "amber";
 };
 
-const variantAccent: Record<NonNullable<PageHeroProps["variant"]>, { pill: string; dot: string }> = {
-  blue: { pill: "bg-blue-50 ring-blue-200/60", dot: "bg-blue-600" },
-  emerald: { pill: "bg-emerald-50 ring-emerald-200/60", dot: "bg-emerald-600" },
-  amber: { pill: "bg-amber-50 ring-amber-200/60", dot: "bg-amber-600" },
+const variantStyle: Record<NonNullable<PageHeroProps["variant"]>, { bg: string; dot: string; glow: string }> = {
+  blue: { bg: "from-blue-600/10 to-transparent", dot: "bg-blue-600", glow: "bg-blue-500/10" },
+  emerald: { bg: "from-emerald-600/10 to-transparent", dot: "bg-emerald-600", glow: "bg-emerald-500/10" },
+  amber: { bg: "from-amber-600/10 to-transparent", dot: "bg-amber-600", glow: "bg-amber-500/10" },
 };
 
 /**
- * Inner-route hero: clean typography with subtle brand accent.
- * No oversized logo boxes — professional minimal layout.
+ * Enterprise-Grade Page Hero
+ * Designed for high-authority sub-pages (Courses, Fees, Alumni).
+ * Uses deep layered backgrounds and premium topography.
  */
 export function PageHero({ eyebrow, title, description, variant = "blue" }: PageHeroProps) {
-  const accent = variantAccent[variant];
+  const style = variantStyle[variant];
   return (
-    <section className="relative overflow-hidden border-b border-slate-200/80 bg-gradient-to-br from-slate-50 via-white to-blue-50/40">
-      {/* Subtle geometric accents */}
-      <div
-        className="pointer-events-none absolute -bottom-32 -right-16 h-64 w-64 rounded-full border border-slate-200/30 md:h-96 md:w-96"
-        aria-hidden
-      />
-      <div
-        className="pointer-events-none absolute -bottom-20 -right-8 h-40 w-40 rounded-full border border-slate-200/20 md:h-60 md:w-60"
-        aria-hidden
-      />
-      <div className="relative mx-auto max-w-7xl px-6 py-14 md:py-16">
-        <div className="flex flex-col gap-4">
-          {/* Accent pill */}
-          <div className={`inline-flex w-fit items-center gap-2 rounded-full px-4 py-2 ring-1 ${accent.pill}`}>
-            <span className={`h-2 w-2 rounded-full ${accent.dot}`} />
-            <span className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-700">{eyebrow}</span>
+    <section className="relative overflow-hidden border-b border-slate-200 bg-white">
+      {/* Premium Background Layering */}
+      <div className={`absolute inset-0 bg-gradient-to-br ${style.bg}`} />
+      <div className={`absolute -right-20 -top-20 h-96 w-96 rounded-full ${style.glow} blur-3xl opacity-50`} />
+      
+      {/* Geometric Decorative Elements */}
+      <div className="absolute left-0 top-0 h-full w-px bg-gradient-to-b from-blue-500/20 via-transparent to-transparent" />
+      <div className="absolute right-[5%] top-1/2 h-[300px] w-[300px] -translate-y-1/2 rounded-full border border-slate-900/[0.03]" />
+
+      <div className="relative mx-auto max-w-7xl px-6 py-20 lg:py-24">
+        <div className="flex flex-col gap-6">
+          {/* Status Badge */}
+          <div className="flex items-center gap-3">
+            <div className={`h-1.5 w-1.5 rounded-full ${style.dot} animate-pulse`} />
+            <span className="text-[0.65rem] font-black uppercase tracking-[0.3em] text-slate-500">
+              {eyebrow}
+            </span>
           </div>
-          <div className="min-w-0 max-w-3xl">
-            <h1 className="text-3xl font-bold tracking-tight text-slate-900 md:text-4xl lg:text-[2.5rem] lg:leading-tight">
+
+          <div className="max-w-4xl">
+            <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-5xl">
               {title}
             </h1>
-            {description ? (
-              <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-600 md:text-lg">
+            {description && (
+              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600">
                 {description}
               </p>
-            ) : null}
+            )}
+          </div>
+
+          {/* Learn Today tagline integrated as an underline accent */}
+          <div className="mt-4 flex items-center gap-4">
+            <div className="h-0.5 w-12 bg-blue-600" />
+            <p className="text-[0.65rem] font-bold uppercase tracking-[0.15em] text-blue-600/80">
+              Learn Today, Lead Tomorrow
+            </p>
           </div>
         </div>
       </div>

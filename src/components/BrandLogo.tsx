@@ -5,36 +5,51 @@ export { BRAND_NAME };
 
 type ImgProps = { className?: string };
 
-/** Navbar — horizontal wordmark on light background. */
+/** 
+ * Navbar Logo — High-fidelity wordmark. 
+ * Uses mix-blend-multiply to perfectly eliminate the white background on light headers.
+ */
 export function NavLogo({ className = "" }: ImgProps) {
+  return (
+    <div className={`relative flex items-center ${className}`}>
+      <Image
+        src="/images/main-logo.png"
+        alt={BRAND_NAME}
+        className="h-auto w-[clamp(7.5rem,24vw,10rem)] max-w-[170px] object-contain object-left md:max-w-[180px] mix-blend-multiply transform-gpu transition-transform hover:scale-105"
+        width={180}
+        height={54}
+      />
+    </div>
+  );
+}
+
+/** 
+ * Footer Logo — Premium white treatment for dark backgrounds.
+ * Uses brightness-0 invert to ensure a pure white look on dark UI.
+ */
+export function FooterLogo({ className = "" }: ImgProps) {
   return (
     <Image
       src="/images/main-logo.png"
       alt={BRAND_NAME}
-      className={`h-auto w-[clamp(7rem,22vw,9.5rem)] max-w-[152px] object-contain object-left md:max-w-[160px] transform-gpu ${className}`}
-      width={160}
-      height={48}
+      className={`h-auto w-full max-w-[200px] object-contain object-left sm:max-w-[220px] brightness-0 invert transform-gpu ${className}`}
+      width={220}
+      height={52}
     />
   );
 }
 
-/** Footer brand block — logo on styled white-ish card that blends with dark footer. */
+/** Footer Brand Block — Enterprise look with tagline integration. */
 export function FooterBrandBlock({ className = "" }: { className?: string }) {
   return (
-    <div className={`${className}`}>
-      {/* White card for logo — looks intentional and premium on dark bg */}
-      <div className="w-fit rounded-xl bg-white px-5 py-3 shadow-lg shadow-black/20">
-        <Image
-          src="/images/main-logo.png"
-          alt={BRAND_NAME}
-          className="h-auto w-[140px] object-contain sm:w-[160px]"
-          width={160}
-          height={48}
-        />
+    <div className={`group flex flex-col gap-3 ${className}`}>
+      <FooterLogo />
+      <div className="flex items-center gap-3">
+        <div className="h-px w-8 bg-blue-500/50 group-hover:w-12 transition-all" />
+        <p className="text-[0.65rem] font-bold uppercase tracking-[0.25em] text-blue-400">
+          Learn Today, Lead Tomorrow
+        </p>
       </div>
-      <p className="mt-3 text-xs font-semibold text-blue-400 tracking-wide uppercase">
-        Learn Today, Lead Tomorrow
-      </p>
     </div>
   );
 }
@@ -46,70 +61,77 @@ export function LogoWordmark({ className = "" }: ImgProps) {
       alt={BRAND_NAME}
       width={160}
       height={48}
-      className={`w-auto max-w-full object-contain object-left ${className}`}
+      className={`w-auto max-w-full object-contain object-left mix-blend-multiply ${className}`}
     />
   );
 }
 
 /**
- * Home hero: logo displayed in a clean white card within the glass stage.
- * Logo PNGs have white backgrounds — we lean into it with a styled white card.
+ * Home Hero Logo Section
+ * Features a high-end "Glass Stage" with vibrant mesh effects.
+ * Uses advanced filtering to maintain brand blue (#2563EB) on dark glass.
  */
 export function HeroLogoMarkGlow({ className = "" }: { className?: string }) {
   return (
-    <div className={`relative w-full max-w-[min(100%,42rem)] lg:max-w-[min(100%,44rem)] ${className}`}>
-      {/* Wide elliptical washes */}
-      <div
-        className="pointer-events-none absolute inset-x-[-5%] top-1/2 h-[min(48vw,12rem)] -translate-y-1/2 rounded-[100%] bg-gradient-to-r from-blue-500/35 via-indigo-400/28 to-blue-600/30 blur-[80px] md:inset-x-[-10%] md:h-48 lg:h-52"
-        aria-hidden
-      />
-      <div
-        className="pointer-events-none absolute left-1/2 top-1/2 h-[min(70vw,15rem)] w-[min(110%,36rem)] -translate-x-1/2 -translate-y-1/2 rounded-[100%] bg-gradient-to-r from-transparent via-blue-400/15 to-transparent blur-3xl"
-        aria-hidden
-      />
-      <div
-        className="pointer-events-none absolute left-1/2 top-1/2 h-52 w-52 -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-400/22 blur-[40px] sm:h-60 sm:w-60 md:h-72 md:w-72"
-        aria-hidden
-      />
+    <div className={`group relative w-full max-w-[min(100%,44rem)] lg:max-w-[min(100%,46rem)] ${className}`}>
+      {/* Premium Multi-Layer Mesh Background */}
+      <div className="pointer-events-none absolute inset-x-[-15%] top-1/2 h-64 -translate-y-1/2 rounded-[100%] bg-gradient-to-r from-blue-600/20 via-indigo-500/25 to-purple-600/20 blur-[100px] opacity-70" aria-hidden />
+      <div className="pointer-events-none absolute left-1/2 top-1/2 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-400/20 blur-[80px] animate-pulse" aria-hidden />
 
-      {/* Glass stage with centered white logo card */}
-      <div
-        className="hero-brand-stage relative z-[1] mx-auto flex w-full min-h-[168px] flex-col items-center justify-center gap-4 rounded-[1.75rem] border border-white/15 bg-gradient-to-br from-white/[0.06] via-blue-950/10 to-indigo-950/15 px-6 py-8 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.12)] sm:min-h-[188px] sm:rounded-[2rem] sm:px-8 sm:py-8 md:aspect-[2.25/1] md:min-h-[200px] md:max-h-[300px] md:px-10 md:py-6 lg:aspect-[2.45/1] lg:min-h-[220px] lg:max-h-[min(32vw,320px)]"
-      >
-        {/* Clean white card for the logo — no blend mode hacks */}
-        <div className="animate-brand-float rounded-2xl bg-white/95 px-8 py-5 shadow-xl shadow-blue-500/15 backdrop-blur-sm sm:px-10 sm:py-6 md:px-12 md:py-7">
+      {/* Main Glass Stage */}
+      <div className="relative z-[1] mx-auto flex w-full min-h-[220px] items-center justify-center rounded-[2.5rem] border border-white/20 bg-gradient-to-br from-white/10 via-blue-950/5 to-indigo-950/10 px-8 py-10 shadow-[0_20px_50px_rgba(0,0,0,0.3),inset_0_1px_1px_rgba(255,255,255,0.2)] backdrop-blur-md transition-all group-hover:shadow-[0_25px_60px_rgba(37,99,235,0.2)] md:aspect-[2.5/1]">
+        
+        {/* The Brand Mark with "Floating" Shadow */}
+        <div className="relative transform-gpu transition-all duration-700 group-hover:scale-110">
+          {/* Subtle Outer Glow to match brand blue */}
+          <div className="absolute inset-x-[-10%] inset-y-[-10%] bg-blue-500/20 blur-2xl rounded-full opacity-60 group-hover:opacity-100 transition-opacity" />
+          
           <Image
-            src="/images/main-logo.png"
-            alt={BRAND_NAME}
-            width={350}
-            height={120}
-            className="h-auto w-[200px] object-contain sm:w-[250px] md:w-[300px] lg:w-[340px]"
+            src="/images/logo-plain.png"
+            alt=""
+            width={450}
+            height={450}
+            className="animate-brand-float relative z-[2] mx-auto h-auto w-full max-h-[160px] max-w-[340px] object-contain sm:max-h-[180px] md:max-h-[220px] lg:max-h-[260px] block"
+            style={{
+               /* 
+                * Sophisticated Filter Stack:
+                * 1. Invert: knocks white to black (but content becomes orange)
+                * 2. Hue-rotate 180: flips orange back to brand blue zone
+                * 3. Saturate/Brightness: tunes it to be vibrant
+                */
+               filter: 'invert(1) hue-rotate(185deg) saturate(3) brightness(1.2)'
+            }}
           />
+        </div>
+      </div>
+
+      {/* Hero Tagline Integration */}
+      <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 z-[2] w-fit">
+        <div className="flex items-center gap-4 px-6 py-2 rounded-full bg-blue-600 shadow-xl shadow-blue-900/40 border border-blue-400/30">
+          <span className="text-[0.55rem] font-black uppercase tracking-[0.4em] text-white whitespace-nowrap">
+            Neonex MindX • Learn Today, Lead Tomorrow
+          </span>
         </div>
       </div>
     </div>
   );
 }
 
-/** Dark CTA strips — clean white card with logo. */
+/** Premium CTA Accent with dynamic line art look */
 export function CtaBrandAccent({ className = "" }: { className?: string }) {
   return (
-    <div className={`mx-auto flex w-full max-w-lg flex-col items-stretch gap-4 md:max-w-xl ${className}`}>
-      <div className="h-px w-full bg-gradient-to-r from-transparent via-blue-400/55 to-transparent" />
-      <div className="flex w-full items-center gap-4 rounded-2xl border border-white/12 bg-gradient-to-r from-white/[0.09] via-white/[0.05] to-white/[0.02] px-6 py-3.5 backdrop-blur-sm sm:px-8 sm:py-4">
-        {/* Small logo card */}
-        <div className="shrink-0 rounded-lg bg-white/95 p-1.5 shadow-md shadow-black/10">
-          <Image
-            src="/images/main-logo.png"
+    <div className={`mx-auto flex w-full max-w-lg flex-col items-center gap-6 ${className}`}>
+      <div className="h-px w-48 bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-60" />
+      <div className="flex items-center gap-6">
+         <Image
+            src="/images/logo-plain.png"
             alt=""
-            width={32}
-            height={32}
-            className="h-7 w-7 object-contain"
-            aria-hidden
+            width={60}
+            height={60}
+            className="h-10 w-10 object-contain invert hue-rotate-[185deg] saturate-[3] brightness-[1.2] opacity-90 scale-125"
           />
-        </div>
-        <div className="h-px min-w-0 flex-1 bg-gradient-to-r from-blue-400/35 to-transparent" aria-hidden />
-        <div className="hidden h-px w-12 shrink-0 bg-gradient-to-l from-blue-400/25 to-transparent sm:block" aria-hidden />
+          <div className="h-0.5 w-12 rounded-full bg-blue-500/30" />
+          <p className="text-[0.6rem] font-bold text-blue-300 tracking-[0.3em] uppercase">Enterprise Grade Learning</p>
       </div>
     </div>
   );

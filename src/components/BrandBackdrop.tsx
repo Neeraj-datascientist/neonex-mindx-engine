@@ -1,8 +1,11 @@
 "use client";
 
+import Image from "next/image";
+
 /**
- * Hero / dark section ambience: gradient mesh + subtle radial glows.
- * No logo watermark — clean professional gradient only.
+ * Enterprise-Grade Hero Backdrop
+ * Features a high-fidelity "Vapor-Mesh" gradient with depth layers.
+ * Re-integrates the brand watermark with ultra-low opacity for a premium textured feel.
  */
 export function BrandBackdrop({ className = "" }: { className?: string }) {
   return (
@@ -10,13 +13,34 @@ export function BrandBackdrop({ className = "" }: { className?: string }) {
       className={`pointer-events-none absolute inset-0 overflow-hidden ${className}`}
       aria-hidden
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-900 via-blue-700 to-indigo-950" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_90%_70%_at_30%_-10%,rgba(37,99,235,0.45),transparent_55%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_100%_80%,rgba(67,56,202,0.2),transparent_50%)]" />
-      {/* Subtle geometric accent instead of logo watermark */}
-      <div className="absolute -right-20 top-1/2 h-96 w-96 -translate-y-1/2 rounded-full border border-white/[0.04] md:right-[5%] md:h-[500px] md:w-[500px]" />
-      <div className="absolute -right-10 top-1/2 h-64 w-64 -translate-y-1/2 rounded-full border border-white/[0.03] md:right-[8%] md:h-80 md:w-80" />
-      <div className="absolute inset-0 bg-gradient-to-t from-slate-950/50 via-transparent to-slate-950/20" />
+      {/* Primary Deep Space Layer */}
+      <div className="absolute inset-0 bg-slate-950" />
+      
+      {/* High-Fidelity Mesh Gradients (Atmospheric Bubbles) */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_35%,rgba(37,99,235,0.22)_0%,transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_65%,rgba(79,70,229,0.18)_0%,transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_-10%,rgba(67,56,202,0.15)_0%,transparent_40%)]" />
+      
+      {/* Subtle Noise / Texture Plate (Optional - using opacity plate for depth) */}
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-transparent to-slate-950/80" />
+
+      {/* 
+       * Brand Watermark (Sophisticated Texture)
+       * We use a large logo mark with ultra-low opacity (0.015).
+       * We apply the brand-blue filter stack so it feels part of the cosmos, not a white box.
+       */}
+      <div className="absolute -right-[15%] top-1/2 h-[600px] w-[800px] -translate-y-1/2 opacity-[0.015]">
+        <img
+          src="/images/main-logo.png"
+          alt=""
+          className="h-full w-full object-contain invert hue-rotate-[185deg] saturate-[3] brightness-[1.5]"
+          aria-hidden
+        />
+      </div>
+
+      {/* Decorative Geometric Framing (Subtle) */}
+      <div className="absolute left-[-10%] top-[-10%] h-[500px] w-[500px] rounded-full border border-blue-500/5" aria-hidden />
+      <div className="absolute bottom-[-20%] right-[-5%] h-[600px] w-[600px] rounded-full border border-indigo-500/5" aria-hidden />
     </div>
   );
 }
